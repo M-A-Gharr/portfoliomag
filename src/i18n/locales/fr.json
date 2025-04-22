@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "certificates": "Certificats",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Développeur Fullstack",
+    "subtitle": "Passionné par la création d'applications web modernes et intuitives",
+    "cta": {
+      "discover": "Découvrir mon profil",
+      "projects": "Voir mes projets"
+    },
+    "quote": "Coder. Créer. Connecter."
+  },
+  "about": {
+    "title": "À propos",
+    "resume": {
+      "title": "Mon parcours",
+      "current": "2022 - Présent",
+      "currentRole": "Développeur Web Fullstack",
+      "currentDesc": "Conception et développement d'applications web avec les technologies modernes.",
+      "previous": "2020 - 2022",
+      "previousRole": "Développeur Front-end",
+      "previousDesc": "Création d'interfaces utilisateur réactives avec HTML, CSS et JavaScript.",
+      "education": "2018 - 2020",
+      "educationRole": "Formation Développeur Web",
+      "educationDesc": "Apprentissage des fondamentaux du développement web et des bonnes pratiques.",
+      "hnd":"Diplome Superieur en CyberSécurité et Cloud",
+      "hndYears":"2022-2024",
+      "hndDesc":"Acquérir des compétences pratiques et théoriques en CyberSécurité, infrastructures Cloud et protection des réseaux"
+    },
+    "goals": {
+      "title": "Mes objectifs",
+      "expertise": {
+        "title": "Expertise technique",
+        "desc": "Approfondir mes connaissances des frameworks modernes et des architectures avancées."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "desc": "Rester à la pointe des nouvelles technologies et méthodologies."
+      },
+      "impact": {
+        "title": "Impact utilisateur",
+        "desc": "Concevoir des expériences utilisateur intuitives et accessibles."
+      }
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Outils",
+    "other": "UI/UX & Autres",
+    "professional": "Compétences Professionnelles",
+    "restApi": "Développement d'API RESTful",
+    "seo": "Meilleures Pratiques SEO",
+    "wordpress": "Personnalisation WordPress",
+    "git": "Git & Gestion de Version",
+    "curiosity": "Curiosité & Auto-apprentissage",
+    "multilingual": "Communication Multilingue"
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Une sélection de mes travaux récents dans le développement web fullstack",
+    "technologies": "Technologies",
+    "features": "Fonctionnalités" 
+  },
+  "certificates": {
+    "title": "Certificats & Formation",
+    "subtitle": "Mes qualifications et certificats dans le domaine du développement web",
+    "sub":"Certificats",
+    "education": {
+      "title": "Formation",
+      "degree": "Ingénieur en Informatique",
+      "university": "Université International de Casablanca, Maroc",
+      "years": "2018 - 2020",
+      "specialization": "Spécialité Systèmes d'Information",
+      "projects": "Projets réalisés : application web de gestion, site e-commerce, JEE, SQL, ASP.Net, Gestion de entreprises, Python, Linux, Réseautages,...",
+      "internship": "Stage de fin d'études : Développeur Front-end/Back-end chez Eurafric Maroc"
+    },
+    "academic": {
+      "title": "Parcours académique",
+      "bachelor": "Licence professionnelle",
+      "bachelorYears": "2015 - 2018",
+      "bachelorDesc": "Spécialisation en Cryptographie Mathématiques et Sécurité de l'Information",
+      "hnd": "Diplome Supérieur",
+      "hndYears": "2022 - 2024",
+      "hndDesc": "Cybersécurité et Informatique Cloud"
+    },
+    "continuous": {
+      "title": "Formation continue",
+      "online": "Cours en ligne & Bootcamps",
+      "onlineYears": "2020 - Présent",
+      "onlineDesc": "Mise à jour régulière des compétences via des plateformes comme Udemy, Coursera et freeCodeCamp"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Vous avez un projet ou une question ? N'hésitez pas à me contacter !",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Merci pour votre message ! Je vous répondrai dès que possible."
+    },
+    "info": {
+      "title": "Informations de contact",
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    }
+  },
+  "theme": {
+    "dark": "Mode sombre",
+    "light": "Mode clair",
+    "toggleDark": "Passer au mode sombre",
+    "toggleLight": "Passer au mode clair"
+  }
+}

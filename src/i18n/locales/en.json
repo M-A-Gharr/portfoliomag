@@ -1,0 +1,184 @@
+
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Fullstack Developer",
+    "subtitle": "Passionate about creating modern and intuitive web applications",
+    "cta": {
+      "discover": "Discover my profile",
+      "projects": "See my projects"
+    },
+    "quote": "Code. Create. Connect."
+  },
+  "about": {
+    "title": "About",
+    "resume": {
+      "title": "My Journey",
+      "current": "2022 - Present",
+      "currentRole": "Fullstack Web Developer",
+      "currentDesc": "Design and development of web applications with modern technologies.",
+      "previous": "2020 - 2022",
+      "previousRole": "Front-end Developer",
+      "previousDesc": "Creation of responsive user interfaces with HTML, CSS and JavaScript.",
+      "education": "2018 - 2020",
+      "educationRole": "Web Developer Training",
+      "educationDesc": "Learning web development fundamentals and best practices."
+    },
+    "goals": {
+      "title": "My Goals",
+      "expertise": {
+        "title": "Technical Expertise",
+        "desc": "Deepen knowledge of modern frameworks and advanced architectures."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "desc": "Stay at the forefront of new technologies and methodologies."
+      },
+      "impact": {
+        "title": "User Impact",
+        "desc": "Design intuitive and accessible user experiences."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools",
+    "other": "UI/UX & Others",
+    "professional": "Professional Skills",
+    "restApi": "RESTful API Development",
+    "seo": "SEO Best Practices",
+    "wordpress": "WordPress Customization",
+    "git": "Git & Version Control",
+    "curiosity": "Curiosity & Self-Learning",
+    "multilingual": "Multilingual Communication"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of my recent work in fullstack web development",
+    "technologies": "Technologies",
+    "features": "Features",
+    "items": {
+      "1": {
+        "title": "Bakery SaaS",
+        "description": "A complete SaaS platform for bakeries, offering inventory management, online ordering, and sales analytics.",
+        "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "AWS"],
+        "features": [
+          "Real-time inventory management",
+          "Online ordering system",
+          "Analytics dashboard",
+          "Customer management"
+        ]
+      },
+      "2": {
+        "title": "Bakery Website",
+        "description": "An elegant showcase website for a bakery, highlighting products, services, and contact information.",
+        "technologies": ["React", "Next.js", "Tailwind CSS", "Prismic CMS"],
+        "features": [
+          "Responsive design",
+          "Product catalog",
+          "Reservation integration",
+          "SEO optimized"
+        ]
+      },
+      "3": {
+        "title": "Portfolio",
+        "description": "A modern and customizable portfolio template for professionals who want to showcase their work and skills.",
+        "technologies": ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+        "features": [
+          "Customizable themes",
+          "Modular sections",
+          "Smooth animations",
+          "Mobile optimized"
+        ]
+      },
+      "4": {
+        "title": "E-commerce",
+        "description": "A complete e-commerce platform with product management, shopping cart, secure payments, and order tracking.",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
+        "features": [
+          "Filterable product catalog",
+          "Persistent shopping cart",
+          "Secure payment gateway",
+          "Order management"
+        ]
+      }
+    }
+  },
+  "certificates": {
+    "title": "Certificates & Education",
+    "subtitle": "My qualifications and certificates in web development",
+    "sub":"Certificates",
+    "education": {
+      "title": "Education",
+      "degree": "Engineering Degree in Computer Science",
+      "university": "International University of Casablanca, Morocco",
+      "years": "2018 - 2020",
+      "specialization": "Information Systems",
+      "projects": "Projects: management web application, e-commerce website, Networking, JEE, ASP.Net, Python, Linux, Business Management,...",
+      "internship": "Final internship: Fullstack Developer in Eurafric Morocco"
+    },
+    "academic": {
+      "title": "Academic Background",
+      "bachelor": "Professional Bachelor's Degree in Methematocal Cryptography & Information Security",
+      "bachelorYears": "2015 - 2018",
+      "bachelorDesc": "Focused on mathematics, cryptography and computer science.",
+      "hnd":"HND in CyberSecurity & Cloud Computing",
+      "hndYears":"2022-2024",
+      "hndDesc":"Practical & theoretical skills in CyberSecurity, Cloud Infrastructure and Network Protection."
+    },
+    "continuous": {
+      "title": "Continuous Learning",
+      "online": "Online Courses & Bootcamps",
+      "onlineYears": "2020 - Present",
+      "onlineDesc": "Regularly updating skills through platforms like Udemy, Coursera, and freeCodeCamp"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project or question? Feel free to contact me!",
+    "form": {
+      "title": "Send a message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Thank you for your message! I will reply as soon as possible."
+    },
+    "info": {
+      "title": "Contact information",
+      "address": "Address",
+      "addressValue": "Paris, France",
+      "phone": "Phone",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    }
+  },
+  "map": {
+    "tokenMessage": "To display the map, please enter your Mapbox public token",
+    "tokenPlaceholder": "Enter your Mapbox token",
+    "submit": "Submit",
+    "getToken": "You can get a token at"
+  },
+  "footer": {
+    "title": "Portfolio",
+    "description": "Fullstack web developer passionate about creating modern and intuitive web applications. Specialized in React, Node.js, and SQL/NoSQL databases.",
+    "stayConnected": "Stay Connected",
+    "copyright": "© {{year}} Fullstack Developer Portfolio. All rights reserved."
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "toggleDark": "Switch to dark mode",
+    "toggleLight": "Switch to light mode"
+  }
+}
