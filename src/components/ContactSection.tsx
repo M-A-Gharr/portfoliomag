@@ -54,20 +54,14 @@ const ContactSection = () => {
     {
       icon: <Phone className="h-5 w-5 text-highlight" />,
       label: t('contact.info.phone'),
-      value: "+33 6 12 34 56 78",
-      link: "tel:+33612345678"
+      value: "+971 55 388 2105",
+      link: "tel:+971553882105"
     },
     {
       icon: <Linkedin className="h-5 w-5 text-highlight" />,
       label: t('contact.info.linkedin'),
-      value: "linkedin.com/in/username",
-      link: "https://linkedin.com/in/username"
-    },
-    {
-      icon: <Youtube className="h-5 w-5 text-highlight" />,
-      label: t('contact.info.youtube'),
-      value: "youtube.com/@username",
-      link: "https://youtube.com/@username"
+      value: "linkedin.com/in/m-amine-gharrab",
+      link: "https://linkedin.com/in/m-amine-gharrab"
     }
   ];
 
