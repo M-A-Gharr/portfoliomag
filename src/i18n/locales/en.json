@@ -170,10 +170,10 @@
     "getToken": "You can get a token at"
   },
   "footer": {
-    "title": "Portfolio",
+    "title": "M.A.G",
     "description": "Fullstack web developer passionate about creating modern and intuitive web applications. Specialized in React, Node.js, and SQL/NoSQL databases.",
     "stayConnected": "Stay Connected",
-    "copyright": "© {{year}} Fullstack Developer Portfolio. All rights reserved."
+    "copyright": "© {{year}} Fullstack Developer M.A.G. All rights reserved."
   },
   "theme": {
     "dark": "Dark Mode",

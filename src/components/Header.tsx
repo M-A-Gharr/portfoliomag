@@ -56,7 +56,7 @@ const Header = () => {
           duration={500}
           className="text-2xl font-bold text-gradient cursor-pointer"
         >
-          M.A.G Portfolio
+          M.A.G
         </Link>
 
         {/* Desktop Nav */}
