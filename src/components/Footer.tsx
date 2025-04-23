@@ -35,13 +35,13 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">{t('footer.stayConnected', 'Stay Connected')}</h3>
             <div className="flex space-x-4">
               <a 
-                href="mailto:contact@example.com" 
+                href="mailto:maminegharr@gmail.com" 
                 className="p-3 bg-secondary/50 hover:bg-highlight/80 text-foreground hover:text-white rounded-full transition-colors"
               >
                 <Mail size={20} />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/M-A-G" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-3 bg-secondary/50 hover:bg-highlight/80 text-foreground hover:text-white rounded-full transition-colors"
@@ -49,7 +49,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/m-amine-gharrab" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-3 bg-secondary/50 hover:bg-highlight/80 text-foreground hover:text-white rounded-full transition-colors"
