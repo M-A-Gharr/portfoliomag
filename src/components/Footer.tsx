@@ -41,7 +41,7 @@ const Footer = () => {
                 <Mail size={20} />
               </a>
               <a 
-                href="https://github.com/M-A-G" 
+                href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-3 bg-secondary/50 hover:bg-highlight/80 text-foreground hover:text-white rounded-full transition-colors"
