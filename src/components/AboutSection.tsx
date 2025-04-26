@@ -13,12 +13,12 @@ const AboutSection = () => {
         <div className="lg:w-1/3 flex flex-col items-center text-center">
           <div className="relative w-60 h-60 rounded-full overflow-hidden border-4 border-highlight mb-6 animate-fade-in">
             <img 
-              src="/images/profilecartoonblurdark.png"
+              src="/portfoliomag/images/profilecartoonblurdark.png"
               alt="Developer profile dark mode"
               className="w-full h-full object-cover dark:block hidden"
             />
             <img 
-              src="/images/profilecartoonblur.png" 
+              src="/portfoliomag/images/profilecartoonblur.png" 
               alt="Developer profile light mode"
               className="w-full h-full object-cover dark:hidden block"
             />
