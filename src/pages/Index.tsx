@@ -16,7 +16,7 @@ const Index = () => {
 
   useEffect(() => {
     // Update document title and meta description when language changes
-    document.title = t('hero.title') + ' | Portfolio';
+    document.title = t('hero.title') + ' | M.A.G';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', t('hero.subtitle'));
