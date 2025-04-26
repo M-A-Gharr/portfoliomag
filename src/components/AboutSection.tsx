@@ -1,8 +1,8 @@
 
 import { useTranslation } from 'react-i18next';
 import { Briefcase, Star, Quote } from 'lucide-react';
-import imgLight from '../images/profilecartoonblur.png';
-import imgDark from '../images/profilecartoonblurdark.png';
+import imgLight from '/images/profilecartoonblur.png';
+import imgDark from '/images/profilecartoonblurdark.png';
 
 const AboutSection = () => {
   const { t } = useTranslation();
