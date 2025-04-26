@@ -11,7 +11,8 @@
     "predeploy":"npm run build",
     "deploy":"gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy-all": "npm run build && git add . && git commit -m \"Auto Deploy 🚀\" && git push"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
