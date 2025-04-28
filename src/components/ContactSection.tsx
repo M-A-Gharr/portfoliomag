@@ -117,7 +117,7 @@ const ContactSection = () => {
                 id="name"
                 name="from_name"
                 placeholder={t('contact.form.name')}
-                value={formData.name}
+                value={formData.from_name}
                 onChange={handleChange}
                 required
                 className="mt-1"
@@ -131,7 +131,7 @@ const ContactSection = () => {
                 name="reply_to"
                 type="email"
                 placeholder={t('contact.form.email')}
-                value={formData.email}
+                value={formData.reply_to}
                 onChange={handleChange}
                 required
                 className="mt-1"
