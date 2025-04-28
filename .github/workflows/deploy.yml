@@ -40,6 +40,6 @@ jobs:
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          personal_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./dist
           commit_message: "🚀 Deploy: ${{ github.event.head_commit.message }}"
