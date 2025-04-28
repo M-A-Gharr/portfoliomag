@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
+import emailjs from 'emailjs-com'
 import { useTranslation } from 'react-i18next';
 import Map from './Map';
 
@@ -23,19 +24,30 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate successful form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Reset submission notification after a few seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 1500);
+  
+    emailjs
+      .sendForm(
+        'service_oxhbmv9',
+        'template_9etupyk',
+        e.currentTarget,
+        'NdM_lTI3uIV1Ov_Rt'
+      )
+      .then(
+        (result) => {
+          console.log('SUCCESS!', result.text);
+          setIsSubmitting(false);
+          setIsSubmitted(true);
+          setFormData({ name: '', email: '', message: '' });
+          setTimeout(() => setIsSubmitted(false), 5000);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setIsSubmitting(false);
+        }
+      );
   };
 
   const contactInfo = [
@@ -90,7 +102,7 @@ const ContactSection = () => {
               <Label htmlFor="name">{t('contact.form.name')}</Label>
               <Input
                 id="name"
-                name="name"
+                name="from_name"
                 placeholder={t('contact.form.name')}
                 value={formData.name}
                 onChange={handleChange}
@@ -103,7 +115,7 @@ const ContactSection = () => {
               <Label htmlFor="email">{t('contact.form.email')}</Label>
               <Input
                 id="email"
-                name="email"
+                name="reply_to"
                 type="email"
                 placeholder={t('contact.form.email')}
                 value={formData.email}
