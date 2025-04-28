@@ -27,28 +27,41 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-  
+
+    // Envoi de l'email vers TOI (Notification)
     emailjs
-      .sendForm(
+      .send(
         'service_oxhbmv9',
-        'template_9etupyk',
-        e.currentTarget,
+        'template_ziyld0c',  // <-- Ton template qui t'envoie le message
+        formData,
         'NdM_lTI3uIV1Ov_Rt'
       )
-      .then(
-        (result) => {
-          console.log('SUCCESS!', result.text);
+      .then(() => {
+        // Ensuite envoi de l'email de confirmation à l'utilisateur
+        emailjs.send(
+          'service_oxhbmv9',
+          'template_pnyo2ld', // <-- Ton template pour l'utilisateur
+          formData,
+          'NdM_lTI3uIV1Ov_Rt'
+        )
+        .then(() => {
+          console.log('SUCCESS!');
           setIsSubmitting(false);
           setIsSubmitted(true);
-          setFormData({ name: '', email: '', message: '' });
+          setFormData({ from_name: '', reply_to: '', message: '' });
           setTimeout(() => setIsSubmitted(false), 5000);
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
+        })
+        .catch((error) => {
+          console.error('FAILED sending confirmation email...', error.text);
           setIsSubmitting(false);
-        }
-      );
+        });
+      })
+      .catch((error) => {
+        console.error('FAILED sending notification email...', error.text);
+        setIsSubmitting(false);
+      });
   };
+
 
   const contactInfo = [
     {
