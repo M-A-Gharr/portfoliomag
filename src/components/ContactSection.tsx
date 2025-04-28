@@ -12,8 +12,8 @@ import Map from './Map';
 const ContactSection = () => {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    from_name: '',
+    reply_to: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
