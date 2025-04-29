@@ -141,7 +141,7 @@ const ProjectsSection = () => {
                   >
                     {project.images.map((img, i) => (
                       <SwiperSlide key={i}>
-                        <img src={img} alt={`Project ${project.id} Image ${i + 1}`} className="w-full h-64 object-cover" />
+                        <img src={img} alt={`Project ${project.id} Image ${i + 1}`} className="w-full h-64 object-cover transform scale-90 transition-transform duration-300 group-hover:scale-100" />
                       </SwiperSlide>
                     ))}
                   </Swiper>
@@ -159,7 +159,7 @@ const ProjectsSection = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25 }}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-black/40 p-4"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
