@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import emailjs from 'emailjs-com'
 import { useTranslation } from 'react-i18next';
-import Map from './Map';
 
 const ContactSection = () => {
   const { t } = useTranslation();
@@ -193,7 +192,7 @@ const ContactSection = () => {
           </div>
           
           <div className="h-[300px] rounded-xl overflow-hidden animate-slide-in-bottom" style={{ animationDelay: '0.3s' }}>
-            <Map />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.3863354144246!2d55.144320175378276!3d25.08878037778088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b503778dffd%3A0x993727742c84f489!2sPrincess%20Tower!5e0!3m2!1sen!2sae!4v1745888033758!5m2!1sen!2sae" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
