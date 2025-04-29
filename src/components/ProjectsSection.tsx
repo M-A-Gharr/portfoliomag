@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useState, useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 import { Code, Globe, ShoppingBag, User } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 import {motion, AnimatePresence}  from 'framer-motion';
 
 type Project = {
@@ -31,6 +31,16 @@ const ProjectsSection = () => {
     setIsOpen(false);
     setSelectedImages([]);
   };
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        closeModal();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen]);
 
   const projects: Project[] = [
     {
@@ -45,7 +55,7 @@ const ProjectsSection = () => {
       icon: <Globe className="h-8 w-8 text-highlight" />,
       link: "#",
       demo: "#",
-      images:["/images/bakerysite/Screenshot1.png","/images/bakerysite/Screenshot2.png","/images/bakerysite/Screenshot3.png","/images/bakerysaas/Screenshot4.png"]
+      images:["/images/bakerysite/Screenshot1.png","/images/bakerysite/Screenshot2.png","/images/bakerysite/Screenshot3.png","/images/bakerysite/Screenshot4.png"]
     },
     {
       id: 3,
@@ -133,11 +143,13 @@ const ProjectsSection = () => {
               {project.images.length > 0 && (
                 <div className="mt-6 cursor-pointer" onClick={() => openModal(project.images)}>
                   <Swiper
-                    modules={[Navigation]}
+                    modules={[Navigation, Keyboard]}
                     navigation
+                    keyboard={{ enabled: true }}
                     spaceBetween={10}
                     slidesPerView={1}
                     className="rounded-lg overflow-hidden"
+                    tabIndex={0}
                   >
                     {project.images.map((img, i) => (
                       <SwiperSlide key={i}>
@@ -177,11 +189,13 @@ const ProjectsSection = () => {
         </button>
 
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Keyboard]}
           navigation
+          keyboard={{ enabled: true }}
           spaceBetween={10}
           slidesPerView={1}
-          className="rounded-lg"
+          className="rounded-lg overflow-hidden"
+          tabIndex={0}
         >
           {selectedImages.map((img, i) => (
             <SwiperSlide key={i}>
