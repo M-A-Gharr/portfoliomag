@@ -38,28 +38,28 @@ const ProjectsSection = () => {
       icon: <ShoppingBag className="h-8 w-8 text-highlight" />,
       link: "#",
       demo: "#",
-      images: ["/images/profilecartoonblur.png","/images/profilecartoonblur.png","/images/profilecartoonblur.png"]
+      images: ["/images/bakerysaas/Screenshot1.png","/images/bakerysaas/Screenshot2.png","/images/bakerysaas/Screenshot3.png","/images/bakerysaas/Screenshot4.png","/images/bakerysaas/Screenshot5.png"]
     },
     {
       id: 2,
       icon: <Globe className="h-8 w-8 text-highlight" />,
       link: "#",
       demo: "#",
-      images:["/images/profilecartoonblur.png","/images/profilecartoonblur.png","/images/profilecartoonblur.png"]
+      images:["/images/bakerysite/Screenshot1.png","/images/bakerysite/Screenshot2.png","/images/bakerysite/Screenshot3.png"]
     },
     {
       id: 3,
       icon: <User className="h-8 w-8 text-highlight" />,
       link: "#",
       demo: "#",
-      images:["/images/profilecartoonblur.png","/images/profilecartoonblur.png","/images/profilecartoonblur.png"]
+      images:["/images/portfolio/Screenshot1.png","/images/portfolio/Screenshot2.png","/images/portfolio/Screenshot3.png"]
     },
     {
       id: 4,
       icon: <ShoppingBag className="h-8 w-8 text-highlight" />,
       link: "#",
       demo: "#",
-      images:["/images/profilecartoonblur.png","/images/profilecartoonblur.png","/images/profilecartoonblur.png"]
+      images:[]
     }
   ];
 
