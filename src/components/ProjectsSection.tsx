@@ -14,7 +14,8 @@ type Project = {
   icon: JSX.Element;
   link?: string;
   demo?: string;
-  images: string[]; // tablrau pour les url des images
+  images: string[]; // tableau pour les url des images
+  captions?: string[]; // tableau pour les légendes des images
 };
 
 const ProjectsSection = () => {
@@ -48,21 +49,24 @@ const ProjectsSection = () => {
       icon: <ShoppingBag className="h-8 w-8 text-highlight" />,
       link: "#",
       demo: "#",
-      images: ["/images/bakerysaas/Screenshot1.png","/images/bakerysaas/Screenshot2.png","/images/bakerysaas/Screenshot3.png","/images/bakerysaas/Screenshot4.png","/images/bakerysaas/Screenshot5.png","/images/bakerysaas/Screenshot6.png"]
+      images: ["/images/bakerysaas/Screenshot1.png","/images/bakerysaas/Screenshot2.png","/images/bakerysaas/Screenshot3.png","/images/bakerysaas/Screenshot4.png","/images/bakerysaas/Screenshot5.png","/images/bakerysaas/Screenshot6.png"],
+      captions:[t("projects.items.1.captions.0"),t("projects.items.1.captions.1"),t("projects.items.1.captions.2"),t("projects.items.1.captions.3"),t("projects.items.1.captions.4"),t("projects.items.1.captions.5")]
     },
     {
       id: 2,
       icon: <Globe className="h-8 w-8 text-highlight" />,
       link: "#",
       demo: "#",
-      images:["/images/bakerysite/Screenshot1.png","/images/bakerysite/Screenshot2.png","/images/bakerysite/Screenshot3.png","/images/bakerysite/Screenshot4.png"]
+      images:["/images/bakerysite/Screenshot1.png","/images/bakerysite/Screenshot2.png","/images/bakerysite/Screenshot3.png","/images/bakerysite/Screenshot4.png"],
+      captions:[t("projects.items.2.captions.0"),t("projects.items.2.captions.1"),t("projects.items.2.captions.2"),t("projects.items.2.captions.3")]
     },
     {
       id: 3,
       icon: <User className="h-8 w-8 text-highlight" />,
       link: "#",
       demo: "#",
-      images:["/images/portfolio/Screenshot1.png","/images/portfolio/Screenshot2.png","/images/portfolio/Screenshot3.png", "/images/portfolio/Screenshot4.png"]
+      images:["/images/portfolio/Screenshot1.png","/images/portfolio/Screenshot2.png","/images/portfolio/Screenshot3.png", "/images/portfolio/Screenshot4.png"],
+      captions:[t("projects.items.3.captions.0"),t("projects.items.3.captions.1"),t("projects.items.3.captions.2"),t("projects.items.3.captions.3")]
     },
     {
       id: 4,
@@ -154,6 +158,11 @@ const ProjectsSection = () => {
                     {project.images.map((img, i) => (
                       <SwiperSlide key={i}>
                         <img src={img} alt={`Project ${project.id} Image ${i + 1}`} className="w-full h-64 object-cover transform scale-90 transition-transform duration-300 group-hover:scale-100" />
+                        {project.captions && project.captions[i] && (
+                          <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-sm px-4 py-2">
+                            {project.captions[i]}
+                          </div>
+                        )}
                       </SwiperSlide>
                     ))}
                   </Swiper>
@@ -197,15 +206,33 @@ const ProjectsSection = () => {
           className="rounded-lg overflow-hidden"
           tabIndex={0}
         >
-          {selectedImages.map((img, i) => (
-            <SwiperSlide key={i}>
-              <img
-                src={img}
-                alt={`Selected Image ${i + 1}`}
-                className="w-full h-[500px] object-contain"
-              />
-            </SwiperSlide>
-          ))}
+          {selectedImages.map((img, i) => {
+            // Find the project that corresponds to the current image
+            const project = projects.find(p => p.images.includes(img));
+            
+            // Get the caption for the image
+            const caption = project ? project.captions?.[project.images.indexOf(img)] : null;
+
+            return (
+              <SwiperSlide key={i}>
+                <div className="relative">
+                  {/* Image */}
+                  <img
+                    src={img}
+                    alt={`Selected Image ${i + 1}`}
+                    className="w-full h-[500px] object-contain"
+                  />
+                  
+                  {/* Caption (overlay or below image) */}
+                  {caption && (
+                    <div className="absolute bottom-0 left-0 w-full bg-black/60 text-white text-sm px-4 py-2">
+                      {caption}
+                    </div>
+                  )}
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </motion.div>
     </motion.div>

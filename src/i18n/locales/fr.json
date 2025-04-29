@@ -64,9 +64,75 @@
   },
   "projects": {
     "title": "Projets",
-    "subtitle": "Une sélection de mes travaux récents dans le développement web fullstack",
+    "subtitle": "Une sélection de mes réalisations récentes en développement web fullstack",
     "technologies": "Technologies",
-    "features": "Fonctionnalités" 
+    "features": "Fonctionnalités",
+    "items": {
+      "1": {
+        "title": "SaaS pour Boulangeries",
+        "description": "Une plateforme SaaS complète pour les boulangeries, offrant la gestion des stocks, les commandes en ligne et l’analyse des ventes.",
+        "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "AWS"],
+        "features": [
+          "Gestion des stocks en temps réel",
+          "Système de commande en ligne",
+          "Tableau de bord analytique",
+          "Gestion des clients"
+        ],
+        "captions": {
+          "0": "Page de connexion et d'inscription sur affichage mobile",
+          "1": "Tableau de bord analytique en mode clair avec prise en charge de la langue arabe sur mobile",
+          "2": "Graphique des ventes avec analyses et alertes de gestion des stocks",
+          "3": "Gestion des stocks en mode sombre avec prise en charge du français",
+          "4": "Outils de rapports et d’analyses avancés",
+          "5": "Tableau de bord analytique en mode sombre sur bureau avec panneau des paramètres du compte"
+        }
+      },
+      "2": {
+        "title": "Site Web de Boulangerie",
+        "description": "Un site vitrine élégant pour une boulangerie, mettant en valeur les produits, les services et les informations de contact.",
+        "technologies": ["React", "Next.js", "Tailwind CSS", "Prismic CMS"],
+        "features": [
+          "Design entièrement responsive",
+          "Catalogue de produits",
+          "Intégration des réservations",
+          "Optimisé pour le référencement (SEO)"
+        ],
+        "captions": {
+          "0": "Design entièrement responsive pour tous les appareils",
+          "1": "Catalogue de produits interactif",
+          "2": "Section des témoignages clients",
+          "3": "Formulaire de contact intégré à Google Maps"
+        }
+      },
+      "3": {
+        "title": "Portfolio",
+        "description": "Un modèle de portfolio moderne et personnalisable pour les professionnels souhaitant mettre en valeur leurs travaux et compétences.",
+        "technologies": ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+        "features": [
+          "Thèmes personnalisables",
+          "Sections modulaires",
+          "Animations fluides",
+          "Optimisé pour mobile"
+        ],
+        "captions": {
+          "0": "Page d’accueil animée avec des transitions fluides",
+          "1": "Section des projets avec filtre par catégories",
+          "2": "Section des compétences avec barres de progression animées",
+          "3": "Formulaire de contact intégré à Google Maps"
+        }
+      },
+      "4": {
+        "title": "E-commerce",
+        "description": "Une plateforme e-commerce complète avec gestion des produits, panier, paiements sécurisés et suivi des commandes.",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
+        "features": [
+          "Catalogue de produits filtrable",
+          "Panier persistant",
+          "Passerelle de paiement sécurisée",
+          "Gestion des commandes"
+        ]
+      }
+    }
   },
   "certificates": {
     "title": "Certificats & Formation",

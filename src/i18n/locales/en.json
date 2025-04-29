@@ -75,7 +75,15 @@
           "Online ordering system",
           "Analytics dashboard",
           "Customer management"
-        ]
+        ],
+        "captions": {
+          "0": "Login & Registration page mobile display",
+          "1": "Analytics dashboard in light mode with Arabic language support on mobile",
+          "2": "Sales graph and analytics, stock management alerts",
+          "3": "Inventory management in dark mode with French language support",
+          "4": "Advanced reporting and analytics tools",
+          "5": "Analytics dashboard in dark mode on desktop with account settings panel"
+        }
       },
       "2": {
         "title": "Bakery Website",
@@ -86,7 +94,13 @@
           "Product catalog",
           "Reservation integration",
           "SEO optimized"
-        ]
+        ],
+        "captions": {
+          "0": "Fully responsive design for all devices",
+          "1": "Interactive product catalog",
+          "2": "Client testimonials section",
+          "3": "Contact form integrated with Google Maps"
+        }
       },
       "3": {
         "title": "Portfolio",
@@ -97,7 +111,13 @@
           "Modular sections",
           "Smooth animations",
           "Mobile optimized"
-        ]
+        ],
+        "captions": {
+          "0": "Animated welcome page with smooth transitions",
+          "1": "Projects section with category filtering",
+          "2": "Skills section featuring animated progress bars",
+          "3": "Contact form integrated with Google Maps"
+        }
       },
       "4": {
         "title": "E-commerce",
