@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
@@ -10,19 +9,16 @@ const ThemeSwitcher = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    // Remove the default dark mode class from the document
-    document.documentElement.classList.remove("dark");
-
     const stored = localStorage.getItem("theme") as "light" | "dark" | null;
     if (stored) {
       setTheme(stored);
       document.documentElement.classList.toggle("dark", stored === "dark");
     } else {
-      // Default to user's system preference
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setTheme(prefersDark ? "dark" : "light");
+      const defaultTheme = prefersDark ? "dark" : "light";
+      setTheme(defaultTheme);
       document.documentElement.classList.toggle("dark", prefersDark);
-      localStorage.setItem("theme", prefersDark ? "dark" : "light");
+      localStorage.setItem("theme", defaultTheme);
     }
   }, []);
 
