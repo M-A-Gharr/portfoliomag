@@ -87,6 +87,74 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+  /* Chatbase Bubble Button Styling for Light Mode */
+  @media (prefers-color-scheme: light) {
+    [chatbase-bubble-button] {
+      background-color: var(--primary);
+      color: var(--primary-foreground);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    [chatbase-bubble-button]:hover {
+      background-color: var(--accent);
+    }
+
+    [chatbase-bubble-button]:focus {
+      outline: 2px solid var(--primary);
+    }
+
+    /* Chat Window (Light Mode) */
+    [chatbase-bubble-button] .chatbase-chat-widget-frame {
+      background-color: var(--background);
+      border: 1px solid var(--border);
+      color: var(--foreground);
+    }
+
+    [chatbase-bubble-button] .chatbase-chat-widget-message.outgoing {
+      background-color: var(--primary);
+      color: var(--primary-foreground);
+    }
+
+    [chatbase-bubble-button] .chatbase-chat-widget-message.incoming {
+      background-color: var(--muted);
+      color: var(--muted-foreground);
+    }
+  }
+
+  /* Chatbase Bubble Button Styling for Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    [chatbase-bubble-button] {
+      background-color: var(--primary);
+      color: var(--primary-foreground);
+      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    }
+
+    [chatbase-bubble-button]:hover {
+      background-color: var(--accent);
+    }
+
+    [chatbase-bubble-button]:focus {
+      outline: 2px solid var(--primary);
+    }
+
+    /* Chat Window (Dark Mode) */
+    [chatbase-bubble-button] .chatbase-chat-widget-frame {
+      background-color: var(--sidebar-primary);
+      border: 1px solid var(--sidebar-border);
+      color: var(--sidebar-foreground);
+    }
+
+    [chatbase-bubble-button] .chatbase-chat-widget-message.outgoing {
+      background-color: var(--primary);
+      color: var(--primary-foreground);
+    }
+
+    [chatbase-bubble-button] .chatbase-chat-widget-message.incoming {
+      background-color: var(--muted);
+      color: var(--muted-foreground);
+    }
+  }
+
 }
 
 @layer base {
