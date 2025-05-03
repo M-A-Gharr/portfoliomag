@@ -11,18 +11,18 @@ const AboutSection = () => {
       
       <div className="flex flex-col lg:flex-row gap-12 mt-10">
         <div className="lg:w-1/3 flex flex-col items-center text-center">
-          <div className="relative w-60 h-60 rounded-full overflow-hidden border-4 border-highlight mb-6 animate-fade-in">
+          <div className="relative w-60 h-60 rounded-full overflow-hidden border-4 border-highlight mb-6 animate-fade-in group">
             <img 
               src="/images/profile/profile.png"
               alt="Developer profile dark mode"
-              className="w-full h-full object-cover dark:block hidden"
+              className="w-full h-full object-cover dark:block hidden transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-90 group-hover:shadow-xl"
             />
             <img 
               src="/images/profile/profile.png"
               alt="Developer profile light mode"
-              className="w-full h-full object-cover dark:hidden block"
+              className="w-full h-full object-cover dark:hidden block transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-90 group-hover:shadow-xl"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-300 group-hover:opacity-70" />
           </div>
           
           <div className="bg-secondary/30 p-6 rounded-xl max-w-md animate-fade-in" style={{ animationDelay: '0.2s' }}>
