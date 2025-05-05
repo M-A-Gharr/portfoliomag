@@ -90,7 +90,7 @@ const SkillsSection = () => {
         {skillCategories.map((category, index) => (
           <div 
             key={category.name}
-            className="bg-secondary/20 rounded-xl p-6 animate-slide-in-bottom"
+            className="bg-secondary/20 rounded-xl p-6 animate-slide-in-bottom group border border-secondary/20 overflow-hidden transition-all duration-300 hover:border-highlight/60 hover:shadow-lg hover:shadow-highlight/60"
             style={{ animationDelay: `${index * 0.1 + 0.2}s` }}
           >
             <div className="flex items-center mb-6">
@@ -100,14 +100,14 @@ const SkillsSection = () => {
             
             <div className="space-y-5">
               {category.skills.map((skill) => (
-                <div key={skill.name} className="space-y-2">
+                <div key={skill.name} className="space-y-2 group bg-secondary/20 border border-secondary/20 overflow-hidden transition-all duration-300 hover:border-highlight/60 hover:shadow-lg hover:shadow-highlight/60 hover:rounded-lg animate-scale-in">
                   <div className="flex justify-between">
                     <span className="text-sm font-medium">{skill.name}</span>
                     <span className="text-xs text-muted-foreground">{skill.level}%</span>
                   </div>
                   <div className="h-2 bg-secondary/50 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-highlight rounded-full transition-all duration-1000 ease-out"
+                      className="h-full bg-highlight rounded-full transition-all duration-1000 ease-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4"
                       style={{ 
                         width: `${skill.level}%`,
                         animation: 'growWidth 1.5s ease-out'
@@ -126,7 +126,7 @@ const SkillsSection = () => {
           <Badge 
             key={skill} 
             variant="outline"
-            className="bg-secondary/30 text-foreground px-3 py-1 text-sm animate-scale-in"
+            className="bg-secondary/30 text-foreground px-3 py-1 text-sm animate-scale-in duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 hover:rounded-lg"
           >
             {skill}
           </Badge>
