@@ -13,12 +13,12 @@ const App = () => (
     <TooltipProvider>
       <div className="fixed inset-0 -z-50 overflow-hidden pointer-events-none">
         <img
-          src="/images/profilecartoonblur.png"
+          src="/images/profile/profile.png"
           alt="Light Background"
           className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-50 transition-all duration-500 dark:hidden"
         />
         <img
-          src="/images/profilecartoonblurdark.png"
+          src="/images/profile/profile.png"
           alt="Dark Background"
           className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 transition-all duration-500 hidden dark:block"
         />
