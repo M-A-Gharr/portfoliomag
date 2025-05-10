@@ -8,7 +8,6 @@ const AboutSection = () => {
   return (
     <section id="about" className="section-container">
       <h2 className="section-title text-center">{t('about.title')}</h2>
-      
       <div className="flex flex-col lg:flex-row gap-12 mt-10">
         <div className="lg:w-1/3 flex flex-col items-center text-center">
           <div className="relative w-60 h-60 rounded-full overflow-hidden border-4 border-highlight mb-6 animate-fade-in group  transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10">
