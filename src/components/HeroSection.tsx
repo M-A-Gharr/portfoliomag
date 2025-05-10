@@ -13,6 +13,29 @@ const HeroSection = () => {
         <div className="absolute top-40 left-20 w-72 h-72 bg-highlight/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-40 right-20 w-72 h-72 bg-highlight-dark/20 rounded-full blur-3xl"></div>
       </div>
+
+       <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0 hidden sm:block">
+        <source src="/videos/intro.webm" type="video/webm" />
+        Your browser does not support the video tag.
+        </video>
+
+      {/* Fallback image for mobile or unsupported browsers */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0 sm:hidden"
+        style={{ backgroundImage: 'url("/images/profile/fallback.jpg")' }}
+      />
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/70 to-background/90 z-10"></div>
+
+      {/* Animated bubbles */}
+      <div className="absolute top-40 left-20 w-72 h-72 bg-highlight/20 rounded-full blur-3xl z-10"></div>
+      <div className="absolute bottom-40 right-20 w-72 h-72 bg-highlight-dark/20 rounded-full blur-3xl z-10"></div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">

@@ -10,6 +10,7 @@ import CertificatesSection from '@/components/CertificatesSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
+
 const Index = () => {
   const { t, i18n } = useTranslation();
 
@@ -20,13 +21,12 @@ const Index = () => {
     if (metaDescription) {
       metaDescription.setAttribute('content', t('hero.subtitle'));
     }
-    
     // Set the document dir attribute based on language
     document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
   }, [t, i18n.language]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+    <div className="relative min-h-screen bg-background text-foreground" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
       <Header />
       <main>
         <HeroSection />

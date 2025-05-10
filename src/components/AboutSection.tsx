@@ -2,9 +2,9 @@
 import { useTranslation } from 'react-i18next';
 import { Briefcase, Star, Quote } from 'lucide-react';
 
+
 const AboutSection = () => {
   const { t } = useTranslation();
-  
   return (
     <section id="about" className="section-container">
       <h2 className="section-title text-center">{t('about.title')}</h2>
