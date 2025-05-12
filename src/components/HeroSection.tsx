@@ -70,7 +70,9 @@ const HeroSection = () => {
           </Link>
         </div>
         
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        
+      </div>
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 animate-bounce">
           <Link
             to="about"
             spy={true}
@@ -82,7 +84,6 @@ const HeroSection = () => {
             <ArrowDown size={28} />
           </Link>
         </div>
-      </div>
     </section>
   );
 };
