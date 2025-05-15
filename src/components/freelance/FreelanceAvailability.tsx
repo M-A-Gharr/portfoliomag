@@ -15,7 +15,11 @@ const FreelanceAvailability = () => {
     t(`bonus.freelance.servicesList.1`),
     t(`bonus.freelance.servicesList.2`),
     t(`bonus.freelance.servicesList.3`),
-    t(`bonus.freelance.servicesList.4`)
+    t(`bonus.freelance.servicesList.4`),
+    t(`bonus.freelance.servicesList.5`),
+    t(`bonus.freelance.servicesList.6`),
+    t(`bonus.freelance.servicesList.7`),
+    t(`bonus.freelance.servicesList.8`)
   ]
 
   const technologies = [
