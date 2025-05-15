@@ -61,7 +61,7 @@ const FreelanceAvailability = () => {
       </CardHeader>
       <CardContent className="px-4 md:px-6 py-4">
         <h4 className="font-semibold mb-2 text-base md:text-lg">{t(`bonus.freelance.availableForWork`)}:</h4>
-        <ul className="space-y-2 mb-6 text-sm md:text-base">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6 text-sm md:text-base">
           {services.map((service, index) => (
             <li key={index} className="flex items-start">
               <span className="text-blue-500 mr-2">•</span>
