@@ -68,7 +68,7 @@ const TestimonialsCarousel = () => {
             >
               <div className="bg-card border rounded-xl p-6 shadow-md h-auto max-h-[400px] overflow-y-auto flex flex-col justify-between">
                 <div className="overflow-y-auto mb-4 pr-1">
-                  <p className="italic mb-4 text-base break-words break-all max-w-full">{testimonial.quote}</p>
+                  <p className="italic mb-4 text-base break-words max-w-full">{testimonial.quote}</p>
                 </div>
                 <div className="flex items-center gap-3 mt-auto">
                   <img
