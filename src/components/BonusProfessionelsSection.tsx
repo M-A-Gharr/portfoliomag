@@ -1,12 +1,12 @@
-import { useState, useRef } from 'react';
-import TestimonialsCarousel from './testimonials/TestimonialsCarousel';
-import BlogPostsCarousel from './blog/BlogPostsCarousel';
-import FreelanceAvailability from './freelance/FreelanceAvailability';
+import React, { lazy, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
+
+const TestimonialsCarousel = lazy(() => import('./testimonials/TestimonialsCarousel'));
+const BlogPostsCarousel = lazy(() => import('./blog/BlogPostsCarousel'));
+const FreelanceAvailability = lazy(() => import('./freelance/FreelanceAvailability'));
 
 const BonusProfessionnelsSection = () => {
   const { t } = useTranslation();
-  const itemRefs = useRef<(HTMLElement | null)[]>([]);
 
   return (
     <section
