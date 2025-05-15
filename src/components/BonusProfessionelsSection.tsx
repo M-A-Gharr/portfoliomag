@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import TestimonialsCarousel from './testimonials/TestimonialsCarousel';
 import BlogPostsCarousel from './blog/BlogPostsCarousel';
 import FreelanceAvailability from './freelance/FreelanceAvailability';
@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const BonusProfessionnelsSection = () => {
   const { t } = useTranslation();
+  const itemRefs = useRef<(HTMLElement | null)[]>([]);
 
   return (
     <section

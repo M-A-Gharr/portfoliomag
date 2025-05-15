@@ -59,13 +59,19 @@ const BlogPostsCarousel = () => {
     },
   ];
 
+  const hasMounted = useRef(false);
   useEffect(() => {
-    itemRefs.current[current]?.scrollIntoView({
-      behavior: 'smooth',
-      inline: 'center',
-      block: 'nearest',
-    });
+    if (hasMounted.current) {
+      itemRefs.current[current]?.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest',
+      });
+    } else {
+      hasMounted.current = true;
+    }
   }, [current]);
+
 
   const next = () => {
     setCurrent((prev) => (prev + 1) % blogPosts.length);

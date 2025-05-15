@@ -37,6 +37,7 @@ const Header = () => {
     { name: t("nav.projects"), to: "projects" },
     { name: t("nav.skills"), to: "skills" },
     { name: t("nav.certificates"), to: "certificates" },
+    { name: t("nav.bonus"), to: "bonus-professionnels" },
     { name: t("nav.contact"), to: "contact" },
   ];
 
