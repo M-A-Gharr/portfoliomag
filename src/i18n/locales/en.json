@@ -44,6 +44,21 @@
         "title": "User Impact",
         "desc": "Design intuitive and accessible user experiences."
       }
+    },
+    "services":{
+      "title":"Services I Offer",
+      "web":{
+        "title":"Web Development",
+        "desc":"Building responsive and performant web applications with modern frameworks and best practices."
+      },
+      "front":{
+        "title":"Frontend Development",
+        "desc":"Creating beautiful user interfaces with attention to detail, performance, and accessibility."
+      },
+      "ui":{
+        "title":"UI/UX Design",
+        "desc":"Designing user-centered interfaces that are both visually appealing and functionally intuitive."
+      }
     }
   },
   "skills": {
@@ -161,6 +176,75 @@
       "onlineDesc": "Regularly updating skills through platforms like Udemy, Coursera, and freeCodeCamp"
     }
   },
+  "bonus": {
+    "sectionTitle": "Professional Bonus",
+    "testimonials": "Testimonials",
+    "blog": "Tech Blog",
+    "availability": "Freelance Availability",
+    "read":"Read More",
+    "close":"Close",
+    "testimonialsData": [
+      {
+        "id": 1,
+        "author": "John Doe",
+        "role": "CEO, OpenView",
+        "quote": "Working with you has been an exceptional experience. Your dedication and skills are outstanding!"
+      },
+      {
+        "id": 2,
+        "author": "Jane Smith",
+        "role": "Project Manager, EurAfric",
+        "quote": "Always professional, punctual, and efficient. Highly recommended!"
+      },
+      {
+        "id": 3,
+        "author": "Alice Johnson",
+        "role": "Lead Developer, WebInnovate",
+        "quote": "A reliable and creative collaborator who significantly improved our technical stack and development processes."
+      }
+    ],
+    "blogPosts": [
+    {
+      "id": 1,
+      "title": "Optimizing React Performance in 2025",
+      "excerpt": "Discover the latest techniques to significantly improve the performance of your React applications...",
+      "content": "In this article, we'll explore advanced techniques to optimize the performance of your React applications in 2025. We'll cover intelligent caching, using React Server Components, render optimization with new APIs, and best practices for reducing bundle size.\n\nPerformance has become more crucial than ever in modern web application development, and React continues to evolve to meet these challenges. We'll see how to leverage the latest features of the React ecosystem to create smooth and responsive user experiences.",
+      "date": "2025-04-18",
+      "url": "#blog-post-1"
+    },
+    {
+      "id": 2,
+      "title": "Micro-frontends Architecture Explained",
+      "excerpt": "A detailed analysis of micro-frontends architecture and how to implement it effectively in your projects...",
+      "content": "Micro-frontends architecture has become a popular approach for managing large, complex frontend applications. In this article, we break down this concept in detail and explore how it can be implemented effectively.\n\nWe'll examine different integration strategies, performance and maintainability trade-offs, and concrete implementation examples with modern frameworks like React, Vue, and Angular. You'll also learn how to solve common challenges related to state sharing, navigation, and visual consistency.",
+      "date": "2025-03-22",
+      "url": "#blog-post-2"
+    },
+    {
+      "id": 3,
+      "title": "Advanced TypeScript for React Developers",
+      "excerpt": "Master advanced TypeScript concepts to make your React code more robust and maintainable...",
+      "content": "This article delves into advanced TypeScript features specifically useful for React developers. We'll cover generic types, conditional types, mapped types, and advanced type concepts.\n\nYou'll learn how to create strongly-typed components that are both flexible and safe, how to effectively use type inference, and how to avoid common pitfalls. We'll also explore libraries like zod and yup for schema validation, as well as strategies for managing global state with full type safety.",
+      "date": "2025-02-15",
+      "url": "#blog-post-3"
+    }
+  ],
+  "freelance": {
+    "availableForWork": "✅ Available for freelance work",
+    "services": "Services offered",
+    "contactMe": "Contact me",
+    "downloadCV": "Download my Resume",
+    "downloadStarted": "Download started",
+    "downloadError": "Download error",
+    "servicesList": [
+      "React/Next.js Application Development",
+      "Backend Architecture with Node.js",
+      "E-commerce Website Development",
+      "WordPress Integration and Customization",
+      "SEO and Performance Optimization"
+    ]
+  }
+},
   "contact": {
     "title": "Contact",
     "subtitle": "Have a project or question? Feel free to contact me!",

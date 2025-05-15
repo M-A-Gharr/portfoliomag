@@ -1,10 +1,29 @@
 
 import { useTranslation } from 'react-i18next';
-import { Briefcase, Star, Quote } from 'lucide-react';
+import { Briefcase, Code, Layout, Brush, Star, Quote } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+
 
 
 const AboutSection = () => {
   const { t } = useTranslation();
+  const services = [
+    {
+      icon: <Code className="h-10 w-10" />,
+      title: t('about.services.web.title'),
+      description: t('about.services.web.desc')
+    },
+    {
+      icon: <Layout className="h-10 w-10" />,
+      title: t('about.services.front.title'),
+      description: t('about.services.front.desc')
+    },
+    {
+      icon: <Brush className="h-10 w-10" />,
+      title: t('about.services.ui.title'),
+      description: t('about.services.ui.desc')
+    }
+  ];
   return (
     <section id="about" className="section-container">
       <h2 className="section-title text-center">{t('about.title')}</h2>
@@ -81,7 +100,7 @@ const AboutSection = () => {
               <Star className="mr-3 text-highlight" size={28} />
               <h3 className="text-2xl font-semibold">{t('about.goals.title')}</h3>
             </div>
-            
+
             <div className="space-y-6">
               <div className="bg-secondary/10 p-4 rounded-lg border-l-2 border-highlight/60 pl-4 ml-2 transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 animate-scale-in">
                 <h4 className="text-lg font-medium text-highlight mb-2">{t('about.goals.expertise.title')}</h4>
@@ -107,6 +126,26 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+      <br></br>
+      <div className="bg-secondary/20 justify-center rounded-xl p-6 md:p-8 animate-slide-in-bottom border border-secondary/20 overflow-hidden transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10" style={{ animationDelay: '0.3s' }}>
+        <div className="flex items-center justify-center mb-6">
+          <Briefcase className="text-highlight mr-3" size={38} />
+          <h3 className="text-2xl font-semibold">{t('about.services.title')}</h3>
+        </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Card key={index} className="border border-border bg-card/50 backdrop-blur-sm hover:bg-card  overflow-hidden transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10">
+                <CardContent className="p-6 text-center">
+                  <div className="mx-auto w-fit p-3 rounded-full bg-primary/10 mb-4">
+                    {service.icon}
+                  </div>
+                  <h4 className="text-xl font-bold mb-2">{service.title}</h4>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
     </section>
   );
 };

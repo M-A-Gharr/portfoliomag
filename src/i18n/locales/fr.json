@@ -46,6 +46,21 @@
         "title": "Impact utilisateur",
         "desc": "Concevoir des expériences utilisateur intuitives et accessibles."
       }
+    },
+    "services":{
+      "title":"Services I Offer",
+      "web":{
+        "title":"Développement Web",
+        "desc":"Building responsive and performant web applications with modern frameworks and best practices."
+      },
+      "front":{
+        "title":"Développement Frontend",
+        "desc":"Creating beautiful user interfaces with attention to detail, performance, and accessibility."
+      },
+      "ui":{
+        "title":"Design UI/UX",
+        "desc":"Designing user-centered interfaces that are both visually appealing and functionally intuitive."
+      }
     }
   },
   "skills": {
@@ -163,6 +178,71 @@
       "onlineDesc": "Mise à jour régulière des compétences via des plateformes comme Udemy, Coursera et freeCodeCamp"
     }
   },
+  "bonus": {
+    "sectionTitle": "Bonus Professionnels",
+    "testimonials": "Témoignages",
+    "blog": "Blog Tech",
+    "availability": "Disponibilité Freelance",
+    "read":"Lire Plus",
+    "close":"Fermer",
+    "testimonialsData": [
+      {
+        "id": 1,
+        "author": "John Doe",
+        "role": "PDG, OpenView",
+        "quote": "Travailler avec vous a été une expérience exceptionnelle. Votre dévouement et vos compétences sont remarquables !"
+      },
+      {
+        "id": 2,
+        "author": "Jane Smith",
+        "role": "Cheffe de projet, EurAfric",
+        "quote": "Toujours professionnel, ponctuel et efficace. Fortement recommandé !"
+      },
+      {
+        "id": 3,
+        "author": "Alice Johnson",
+        "role": "Lead Developer, WebInnovate",
+        "quote": "Un collaborateur fiable et créatif qui a considérablement amélioré notre stack technique et nos processus de développement."
+      }],
+    "blogPosts": [
+      {
+        "id": 1,
+        "title": "Optimiser les performances React en 2025",
+        "excerpt": "Découvrez les dernières techniques pour améliorer significativement les performances de vos applications React...",
+        "content": "Dans cet article, nous explorerons les techniques avancées pour optimiser les performances de vos applications React en 2025. Nous couvrirons la mise en cache intelligente, l'utilisation de React Server Components, l'optimisation des rendus avec les nouvelles API, et les meilleures pratiques pour réduire la taille des bundles.\n\nLa performance est devenue plus cruciale que jamais dans le développement d'applications web modernes, et React continue d'évoluer pour répondre à ces défis. Nous verrons comment tirer parti des dernières fonctionnalités de l'écosystème React pour créer des expériences utilisateur fluides et réactives.",
+        "date": "2025-04-18",
+        "url": "#blog-post-1"
+      },
+      {
+        "id": 2,
+        "title": "L'architecture micro-frontends expliquée",
+        "excerpt": "Une analyse détaillée de l'architecture micro-frontends et comment l'implémenter efficacement dans vos projets...",
+        "content": "L'architecture micro-frontends est devenue une approche populaire pour gérer de grandes applications frontend complexes. Dans cet article, nous décomposons ce concept en détail et explorons comment il peut être implémenté efficacement.\n\nNous examinerons les différentes stratégies d'intégration, les compromis en termes de performance et de maintenabilité, ainsi que des exemples concrets d'implémentation avec des frameworks modernes comme React, Vue et Angular. Vous apprendrez également comment résoudre les défis courants liés au partage d'état, à la navigation et à la cohérence visuelle.",
+        "date": "2025-03-22",
+        "url": "#blog-post-2"
+      },
+      {
+        "id": 3,
+        "title": "TypeScript avancé pour les développeurs React",
+        "excerpt": "Maîtrisez les concepts avancés de TypeScript pour rendre votre code React plus robuste et maintenable...",
+        "content": "Cet article plonge dans les fonctionnalités avancées de TypeScript spécifiquement utiles pour les développeurs React. Nous couvrirons les types génériques, les types conditionnels, les types mappés et les concepts de type avancés.\n\nVous apprendrez à créer des composants fortement typés qui sont à la fois flexibles et sûrs, à utiliser efficacement les inférences de type, et à éviter les pièges courants. Nous explorerons également des bibliothèques comme zod et yup pour la validation de schéma, ainsi que des stratégies pour gérer l'état global avec une sécurité de type complète.",
+        "date": "2025-02-15",
+        "url": "#blog-post-3"
+      }],
+  "freelance": {
+      "availableForWork": "✅ Disponible pour missions freelance",
+      "services": "Services proposés",
+      "contactMe": "Me contacter",
+      "downloadCV": "Télécharger mon CV",
+      "downloadStarted": "Téléchargement démarré",
+      "downloadError": "Erreur lors du téléchargement",
+      "servicesList": [
+        "Développement d'applications React/Next.js",
+        "Architecture backend avec Node.js",
+        "Création de sites e-commerce",
+        "Intégration et personnalisation WordPress",
+        "Optimisation SEO et performances"
+      ]}},
   "contact": {
     "title": "Contact",
     "subtitle": "Vous avez un projet ou une question ? N'hésitez pas à me contacter !",

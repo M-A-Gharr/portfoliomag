@@ -100,14 +100,14 @@ const SkillsSection = () => {
             
             <div className="space-y-5">
               {category.skills.map((skill) => (
-                <div key={skill.name} className="space-y-2 group bg-secondary/20 border border-secondary/20 overflow-hidden transition-all duration-300 hover:border-highlight/60 hover:shadow-lg hover:shadow-highlight/60 hover:rounded-lg animate-scale-in">
+                <div key={skill.name} className="space-y-2 group bg-secondary/20 border border-secondary/20 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-highlight/60 animate-scale-in">
                   <div className="flex justify-between">
                     <span className="text-sm font-medium">{skill.name}</span>
                     <span className="text-xs text-muted-foreground">{skill.level}%</span>
                   </div>
                   <div className="h-2 bg-secondary/50 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-highlight rounded-full transition-all duration-1000 ease-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4"
+                      className="h-full bg-highlight transition-all duration-300 ease-out hover:shadow-md"
                       style={{ 
                         width: `${skill.level}%`,
                         animation: 'growWidth 1.5s ease-out'
