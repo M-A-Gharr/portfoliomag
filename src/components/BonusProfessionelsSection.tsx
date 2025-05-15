@@ -3,8 +3,9 @@ import TestimonialsCarousel from './testimonials/TestimonialsCarousel';
 import BlogPostsCarousel from './blog/BlogPostsCarousel';
 import FreelanceAvailability from './freelance/FreelanceAvailability';
 import { useTranslation } from 'react-i18next';
+
 const BonusProfessionnelsSection = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section
@@ -21,22 +22,27 @@ const BonusProfessionnelsSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Testimonials */}
-          <div className="bg-secondary/20 border border-secondary/20 rounded-xl p-6 transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.testimonials`)}</h3>
-            <TestimonialsCarousel />
+          {/* Colonne 1 : Testimonials + Blog */}
+          <div className="lg:col-span-1 flex flex-col gap-12">
+            {/* Testimonials */}
+            <div className="bg-secondary/20 border border-secondary/20 rounded-xl p-6 min-h-[400px] transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.testimonials`)}</h3>
+              <TestimonialsCarousel />
+            </div>
+
+            {/* Blog */}
+            <div className="bg-secondary/20 border border-secondary/20 rounded-xl p-6 min-h-[400px] transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.blog`)}</h3>
+              <BlogPostsCarousel />
+            </div>
           </div>
 
-          {/* Blog */}
-          <div className="bg-secondary/20 border border-secondary/20 rounded-xl p-6 transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.blog`)}</h3>
-            <BlogPostsCarousel />
-          </div>
-
-          {/* Availability */}
-          <div className="bg-secondary/20 border border-secondary/20 rounded-xl p-6 transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.availability`)}</h3>
-            <FreelanceAvailability />
+          {/* Colonne 2 : Freelance Availability */}
+          <div className="lg:col-span-2">
+            <div className="h-full min-h-[820px] bg-secondary/20 border border-secondary/20 rounded-xl p-6 transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
+              <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.availability`)}</h3>
+              <FreelanceAvailability />
+            </div>
           </div>
         </div>
       </div>
