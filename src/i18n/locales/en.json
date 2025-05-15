@@ -186,20 +186,20 @@
     "testimonialsData": [
       {
         "id": 1,
-        "author": "John Doe",
+        "author": "Rashid AIT YAAZZA",
         "role": "CEO, OpenView",
         "quote": "Working with you has been an exceptional experience. Your dedication and skills are outstanding!"
       },
       {
         "id": 2,
-        "author": "Jane Smith",
-        "role": "Project Manager, EurAfric",
+        "author": "Abdessamad EL HASSANI",
+        "role": "Senior Project Manager, EurAfric",
         "quote": "Always professional, punctual, and efficient. Highly recommended!"
       },
       {
         "id": 3,
-        "author": "Alice Johnson",
-        "role": "Lead Developer, WebInnovate",
+        "author": "Hicham Benmetraf",
+        "role": "Lead Developer, CellInnovate",
         "quote": "A reliable and creative collaborator who significantly improved our technical stack and development processes."
       }
     ],

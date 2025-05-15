@@ -188,20 +188,20 @@
     "testimonialsData": [
       {
         "id": 1,
-        "author": "John Doe",
+        "author": "Rashid AIT YAAZZA",
         "role": "PDG, OpenView",
         "quote": "Travailler avec vous a été une expérience exceptionnelle. Votre dévouement et vos compétences sont remarquables !"
       },
       {
         "id": 2,
-        "author": "Jane Smith",
-        "role": "Cheffe de projet, EurAfric",
+        "author": "Abdessamad EL HASSANI",
+        "role": "Chef de projet, EurAfric",
         "quote": "Toujours professionnel, ponctuel et efficace. Fortement recommandé !"
       },
       {
         "id": 3,
-        "author": "Alice Johnson",
-        "role": "Lead Developer, WebInnovate",
+        "author": "Hicham Benmetraf",
+        "role": "Lead Developer, CellInnovation",
         "quote": "Un collaborateur fiable et créatif qui a considérablement amélioré notre stack technique et nos processus de développement."
       }],
     "blogPosts": [

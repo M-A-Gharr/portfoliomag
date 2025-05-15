@@ -20,21 +20,21 @@ const TestimonialsCarousel = () => {
       quote: t('bonus.testimonialsData.0.quote'),
       name: t('bonus.testimonialsData.0.author'),
       role: t('bonus.testimonialsData.0.role'),
-      avatar: 'https://i.pravatar.cc/150?img=26',
+      avatar: 'images/profile/profile.svg',
     },
     {
       id: 2,
       quote: t('bonus.testimonialsData.1.quote'),
       name: t('bonus.testimonialsData.1.author'),
       role: t('bonus.testimonialsData.1.role'),
-      avatar: 'https://i.pravatar.cc/150?img=53',
+      avatar: 'images/profile/profile.svg',
     },
     {
       id: 3,
       quote: t('bonus.testimonialsData.2.quote'),
       name: t('bonus.testimonialsData.2.author'),
       role: t('bonus.testimonialsData.2.role'),
-      avatar: 'https://i.pravatar.cc/150?img=32',
+      avatar: 'images/profile/profile.svg',
     },
   ];
 

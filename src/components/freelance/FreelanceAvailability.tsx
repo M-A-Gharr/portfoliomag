@@ -32,12 +32,12 @@ const FreelanceAvailability = () => {
   const handleCVDownload = () => {
     try {
       // Create a URL to a sample CV PDF file (assuming it's in the public folder)
-      const cvUrl = "public/cv/MAG-en.pdf";
+      const cvUrl = "cv/MAG-en.pdf";
       
       // Create a link element
       const link = document.createElement("a");
       link.href = cvUrl; // Path to your CV file
-      link.setAttribute("download", t.name === 'fr' ? "cv-francais.pdf" : "resume-english.pdf"); // Set the file name
+      link.setAttribute("download", t.name === 'fr' ? "cv-francais.pdf" : "resume-english.pdf"); 
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
