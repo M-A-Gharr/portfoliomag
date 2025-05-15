@@ -53,7 +53,7 @@ const TestimonialsCarousel = () => {
   const previous = () => setCurrent((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
 
   return (
-    <div className="w-full px-4">
+    <div className="w-full px-2">
       {isMobile ? (
         <div
           className={`flex overflow-x-auto gap-4 snap-x snap-mandatory scroll-smooth ${
@@ -64,11 +64,11 @@ const TestimonialsCarousel = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="min-w-[90%] snap-center"
+              className="min-w-full snap-center"
             >
               <div className="bg-card border rounded-xl p-6 shadow-md h-auto max-h-[400px] overflow-y-auto flex flex-col justify-between">
                 <div className="overflow-y-auto mb-4 pr-1">
-                  <p className="italic mb-4 text-base break-words break-all word-break-break-word max-w-full">{testimonial.quote}</p>
+                  <p className="italic mb-4 text-base break-words break-all max-w-full">{testimonial.quote}</p>
                 </div>
                 <div className="flex items-center gap-3 mt-auto">
                   <img
