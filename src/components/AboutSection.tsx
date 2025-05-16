@@ -1,12 +1,22 @@
 
 import { useTranslation } from 'react-i18next';
-import { Briefcase, Code, Layout, Brush, Star, Quote } from 'lucide-react';
+import { Briefcase, Link,CalendarIcon, Code, Layout, Brush, Star, Quote, Database, Search } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
+import { Calendar } from "@/components/ui/calendar";
+import { Separator } from "@/components/ui/separator";
+import { format } from "date-fns";
 
 
 
 const AboutSection = () => {
   const { t } = useTranslation();
+  const [date, setDate] = useState<Date | undefined>(undefined);
+  const [showCalendar, setShowCalendar] = useState(false);
   const services = [
     {
       icon: <Code className="h-10 w-10 text-highlight" />,
@@ -24,6 +34,18 @@ const AboutSection = () => {
       description: t('about.services.ui.desc')
     }
   ];
+
+  const handleBookNow = () => {
+    if (date) {
+      // In a real implementation, this would send the booking request
+      console.log(`Booking requested for: ${format(date, 'PPP')}`);
+      window.open('mailto:maminegharr@gmail.com?subject=Booking Request&body=I would like to book your services' + 
+        (date ? ` on ${format(date, 'PPP')}` : ''), '_blank');
+    } else {
+      setShowCalendar(true);
+    }
+  };
+
   return (
     <section id="about" className="section-container">
       <h2 className="section-title text-center">{t('about.title')}</h2>
@@ -146,6 +168,92 @@ const AboutSection = () => {
               </Card>
             ))}
           </div>
+          <div className='w-full flex justify-center mt-10'>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full">
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Ready to collaborate?</h3>
+                <p className="text-muted-foreground mb-6">
+                  Choose a date that works for you and let's discuss how I can help with your project.
+                </p>
+                
+                <div className="flex flex-wrap gap-3 mb-6">
+                  <Badge variant="outline" className="bg-blue-950/30 hover:bg-blue-900/30 border-blue-800/30">
+                    <Code className="mr-1 h-3 w-3" /> React
+                  </Badge>
+                  <Badge variant="outline" className="bg-blue-950/30 hover:bg-blue-900/30 border-blue-800/30">
+                    <Database className="mr-1 h-3 w-3" /> API Integration
+                  </Badge>
+                  <Badge variant="outline" className="bg-blue-950/30 hover:bg-blue-900/30 border-blue-800/30">
+                    <Search className="mr-1 h-3 w-3" /> SEO
+                  </Badge>
+                  <Badge variant="outline" className="bg-blue-950/30 hover:bg-blue-900/30 border-blue-800/30">
+                    <Link className="mr-1 h-3 w-3" /> Web Development
+                  </Badge>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Popover open={showCalendar} onOpenChange={setShowCalendar}>
+                    <PopoverTrigger asChild>
+                      <Button variant="outline" className={cn(
+                        "w-full sm:w-auto justify-start text-left font-normal",
+                        !date && "text-muted-foreground"
+                      )}>
+                        <CalendarIcon className="mr-2 h-4 w-4" />
+                        {date ? format(date, "PPP") : "Select a date"}
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0" align="start">
+                      <Calendar
+                        mode="single"
+                        selected={date}
+                        onSelect={(newDate) => {
+                          setDate(newDate);
+                          setShowCalendar(false);
+                        }}
+                        initialFocus
+                      />
+                    </PopoverContent>
+                  </Popover>
+                  
+                  <Button 
+                    className="bg-highlight hover:bg-highlight-dark text-white w-full sm:w-auto"
+                    onClick={handleBookNow}
+                  >
+                    Book Now
+                  </Button>
+                </div>
+              </div>
+              
+              <div className="hidden md:block">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-blue-500/10 rounded-full filter blur-3xl"></div>
+                  <div className="relative bg-blue-950/40 border border-blue-800/30 rounded-lg p-6 backdrop-blur-sm">
+                    <h4 className="text-lg font-medium mb-4">My Availability</h4>
+                    <Separator className="my-3 bg-blue-800/30" />
+                    <ul className="space-y-2">
+                      <li className="flex justify-between">
+                        <span>Design Consultation</span>
+                        <Badge>2-3 Days</Badge>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>Development Project</span>
+                        <Badge>1-2 Weeks</Badge>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>Technical Review</span>
+                        <Badge>24 Hours</Badge>
+                      </li>
+                    </ul>
+                    <Separator className="my-3 bg-blue-800/30" />
+                    <p className="text-sm text-muted-foreground">
+                      Response time: Usually within 24 hours
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
     </section>
   );
