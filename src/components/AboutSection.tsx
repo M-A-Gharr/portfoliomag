@@ -9,17 +9,17 @@ const AboutSection = () => {
   const { t } = useTranslation();
   const services = [
     {
-      icon: <Code className="h-10 w-10" />,
+      icon: <Code className="h-10 w-10 text-highlight" />,
       title: t('about.services.web.title'),
       description: t('about.services.web.desc')
     },
     {
-      icon: <Layout className="h-10 w-10" />,
+      icon: <Layout className="h-10 w-10 text-highlight" />,
       title: t('about.services.front.title'),
       description: t('about.services.front.desc')
     },
     {
-      icon: <Brush className="h-10 w-10" />,
+      icon: <Brush className="h-10 w-10 text-highlight" />,
       title: t('about.services.ui.title'),
       description: t('about.services.ui.desc')
     }
@@ -127,6 +127,7 @@ const AboutSection = () => {
         </div>
       </div>
       <br></br>
+      {/* services I offer */}
       <div className="bg-secondary/20 justify-center rounded-xl p-6 md:p-8 animate-slide-in-bottom border border-secondary/20 overflow-hidden transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10" style={{ animationDelay: '0.3s' }}>
         <div className="flex items-center justify-center mb-6">
           <Briefcase className="text-highlight mr-3" size={38} />

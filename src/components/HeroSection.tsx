@@ -72,14 +72,14 @@ const HeroSection = () => {
         
         
       </div>
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 animate-bounce">
+      <div className="absolute justify-center bottom-10 left-3/2 transform -translate-x-1/2 z-30 animate-bounce">
           <Link
             to="about"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            className="cursor-pointer text-foreground/70 hover:text-highlight transition-colors"
+            className="cursor-pointer justify-center text-foreground/70 hover:text-highlight transition-colors"
           >
             <ArrowDown size={28} />
           </Link>

@@ -19,7 +19,7 @@ const Footer = () => {
             duration={800}
             className="p-3 bg-highlight hover:bg-highlight-dark text-white rounded-full cursor-pointer transition-colors"
           >
-            <ArrowUp size={24} />
+            <ArrowUp size={28} />
           </Link>
         </div>
         

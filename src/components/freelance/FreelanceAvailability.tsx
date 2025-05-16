@@ -32,7 +32,7 @@ const FreelanceAvailability = () => {
   const handleCVDownload = () => {
     try {
       // Create a URL to a sample CV PDF file (assuming it's in the public folder)
-      const cvUrl = "cv/MAG-en.pdf";
+      const cvUrl = "cv/CD-MAG.pdf";
       
       // Create a link element
       const link = document.createElement("a");
@@ -53,7 +53,7 @@ const FreelanceAvailability = () => {
   };
 
   return (
-    <Card className="border border-indigo-200 overflow-hidden hover:shadow-md transition-all duration-300 w-full max-w-[700px] mx-auto">
+    <Card className="border border-highlight overflow-hidden hover:shadow-md transition-all duration-300 w-full max-w-[700px] mx-auto">
       <CardHeader className="bg-blue-50 dark:bg-blue-900/20">
         <CardTitle className="text-xl text-center text-blue-600 dark:text-indigo-300">
           {t(`bonus.freelance.availableForWork`)}
@@ -90,7 +90,7 @@ const FreelanceAvailability = () => {
       </CardContent>
       <CardFooter className="flex flex-col sm:flex-row sm:justify-between gap-3 px-4 pb-4">
         <Button 
-          className="bg-indigo-500 hover:bg-indigo-600 text-white w-full"
+          className="relative inline-flex items-center justify-center sm:flex-row w-4/6 py-3 bg-highlight hover:bg-highlight-dark text-white sm:w-auto"
           onClick={() => {
             const contactSection = document.getElementById('contact');
             if (contactSection) {
@@ -102,7 +102,7 @@ const FreelanceAvailability = () => {
         </Button>
         <Button 
           variant="outline"
-          className="bg-highlight hover:bg-highlight-dark w-full flex items-center gap-2"
+          className="relative inline-flex items-center justify-center w-5/6 px-6 py-3 overflow-hidden font-medium transition-all bg-transparent border border-highlight text-highlight hover:text-white hover:bg-highlight-dark rounded-md group"
           onClick={handleCVDownload}
         >
           <Download className="h-4 w-4" />
