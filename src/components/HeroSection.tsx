@@ -48,12 +48,13 @@ const HeroSection = () => {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Link
-            to="about"
+            to="book"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-highlight hover:bg-highlight-dark rounded-md group"
+            className="relative cursor-pointer inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-highlight hover:bg-highlight-dark rounded-md group"
+            aria-label="Scroll to About Section"
           >
             <span className="relative text-white">{t('hero.cta.discover')}</span>
           </Link>

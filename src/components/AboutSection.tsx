@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import { Calendar } from "@/components/ui/calendar";
 import { Separator } from "@/components/ui/separator";
 import { format } from "date-fns";
-
+import { Element } from 'react-scroll';
 
 
 const AboutSection = () => {
@@ -168,7 +168,7 @@ const AboutSection = () => {
               </Card>
             ))}
           </div>
-          <div className='w-full flex justify-center mt-10'>
+          <Element name="book" className='w-full flex justify-center mt-10'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full">
               <div>
                 <h3 className="text-2xl font-bold mb-4">Ready to collaborate?</h3>
@@ -252,8 +252,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-          </div>
-          
+          </Element>
         </div>
     </section>
   );
