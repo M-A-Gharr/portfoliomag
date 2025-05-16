@@ -29,36 +29,36 @@
       "education": "2018 - 2020",
       "educationRole": "Formazione in sviluppo web",
       "educationDesc": "Apprendimento dei fondamenti e delle migliori pratiche dello sviluppo web."
-    }
-  },
-  "goals": {
-    "title": "I miei obiettivi",
-    "expertise": {
-      "title": "Competenza tecnica",
-      "desc": "Approfondire la conoscenza di framework moderni e architetture avanzate."
     },
-    "innovation": {
-      "title": "Innovazione",
-      "desc": "Rimanere all'avanguardia delle nuove tecnologie e metodologie."
+    "goals": {
+      "title": "I miei obiettivi",
+      "expertise": {
+        "title": "Competenza tecnica",
+        "desc": "Approfondire la conoscenza di framework moderni e architetture avanzate."
+      },
+      "innovation": {
+        "title": "Innovazione",
+        "desc": "Rimanere all'avanguardia delle nuove tecnologie e metodologie."
+      },
+      "impact": {
+        "title": "Impatto sull'utente",
+        "desc": "Progettare esperienze utente intuitive e accessibili."
+      }
     },
-    "impact": {
-      "title": "Impatto sull'utente",
-      "desc": "Progettare esperienze utente intuitive e accessibili."
-    }
-  },
-  "services": {
-    "title": "Servizi che offro",
-    "web": {
-      "title": "Sviluppo Web",
-      "desc": "Costruzione di applicazioni web responsive e performanti con framework moderni e migliori pratiche."
-    },
-    "front": {
-      "title": "Sviluppo Frontend",
-      "desc": "Creazione di interfacce utente belle con attenzione ai dettagli, prestazioni e accessibilità."
-    },
-    "ui": {
-      "title": "Design UI/UX",
-      "desc": "Progettazione di interfacce utente centrati sull'utente, visivamente attraenti e funzionalmente intuitive."
+    "services": {
+      "title": "Servizi che offro",
+      "web": {
+        "title": "Sviluppo Web",
+        "desc": "Costruzione di applicazioni web responsive e performanti con framework moderni e migliori pratiche."
+      },
+      "front": {
+        "title": "Sviluppo Frontend",
+        "desc": "Creazione di interfacce utente belle con attenzione ai dettagli, prestazioni e accessibilità."
+      },
+      "ui": {
+        "title": "Design UI/UX",
+        "desc": "Progettazione di interfacce utente centrati sull'utente, visivamente attraenti e funzionalmente intuitive."
+      }
     }
   },
   "skills": {
@@ -169,7 +169,8 @@
           "Gestione ordini"
         ]
       }
-    },
+    }
+  },
     "certificates": {
       "title": "Certificati e formazione",
       "subtitle": "Le mie qualifiche e certificati nello sviluppo web",
@@ -313,4 +314,3 @@
       "toggleLight": "Passa alla modalità chiara"
     }
   }
-}
