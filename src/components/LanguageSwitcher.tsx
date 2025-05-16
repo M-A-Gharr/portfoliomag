@@ -14,6 +14,10 @@ const languages = [
   { code: 'fr', label: '🇫🇷 Français' },
   { code: 'en', label: '🇬🇧 English' },
   { code: 'ar', label: '🇸🇦 العربية' },
+  { code: 'ru', label: '🇷🇺 Русский' },
+  { code: 'hi', label: '🇮🇳 हिन्दी' },
+  { code: 'es', label: '🇪🇸 Español' },
+  { code: 'it', label: '🇮🇹 Italiano' }
 ];
 
 const LanguageSwitcher = () => {
