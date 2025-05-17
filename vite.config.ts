@@ -25,7 +25,6 @@ export default defineConfig(({ mode }) => ({
           react: ['react', 'react-dom'],
           ui: ['lucide-react', '@/components/ui/index.ts'],
           animation: ['framer-motion'],
-          charts: ['chart.js'],
           i18n: ['i18next', 'react-i18next']
         }
       }
