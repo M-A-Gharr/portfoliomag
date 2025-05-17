@@ -223,13 +223,12 @@ const AboutSection = () => {
                   </Button>
                 </div>
               </div>
-              
-              <div className="hidden md:block">
+              <div className="block md:block">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-blue-500/10 rounded-full filter blur-3xl"></div>
-                  <div className="relative bg-blue-950/40 border border-blue-800/30 rounded-lg p-6 backdrop-blur-sm">
+                  <div className="absolute inset-0 bg-indigo-500/10 rounded-full filter blur-3xl"></div>
+                  <div className="relative bg-indigo-950/40 border border-indigo-800/30 rounded-lg p-6 backdrop-blur-sm">
                     <h4 className="text-lg font-medium mb-4">{t('about.book.availability')}</h4>
-                    <Separator className="my-3 bg-blue-800/30" />
+                    <Separator className="my-3 bg-indigo-800/30" />
                     <ul className="space-y-2">
                       <li className="flex justify-between">
                         <span>{t('about.book.consultation')}</span>
