@@ -110,7 +110,7 @@ const ContactSection = () => {
           ) : null}
           
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
+            <div className='transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 animate-scale-in'>
               <Label htmlFor="name">{t('contact.form.name')}</Label>
               <Input
                 id="name"
@@ -123,7 +123,7 @@ const ContactSection = () => {
               />
             </div>
             
-            <div>
+            <div className='transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 animate-scale-in'>
               <Label htmlFor="email">{t('contact.form.email')}</Label>
               <Input
                 id="email"
@@ -137,7 +137,7 @@ const ContactSection = () => {
               />
             </div>
             
-            <div>
+            <div className='transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 animate-scale-in'>
               <Label htmlFor="message">{t('contact.form.message')}</Label>
               <Textarea
                 id="message"
