@@ -65,6 +65,8 @@
       "desc": "Elige una fecha que te funcione y hablemos sobre cómo puedo ayudarte con tu proyecto.",
       "date": "Seleccionar una fecha",
       "button": "Reservar ahora",
+      "emailsubject": "Solicitud de reserva",
+      "emailbody": "Me gustaría reservar sus servicios",
       "availability": "Mi disponibilidad",
       "consultation": "Consulta de diseño",
       "consultdesc": "2-3 días",

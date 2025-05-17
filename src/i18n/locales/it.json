@@ -65,6 +65,8 @@
       "desc": "Scegli una data che ti va bene e parliamo di come posso aiutarti con il tuo progetto.",
       "date": "Seleziona una data",
       "button": "Prenota ora",
+      "emailsubject": "Richiesta di prenotazione",
+      "emailbody": "Vorrei prenotare i tuoi servizi",
       "availability": "La mia disponibilità",
       "consultation": "Consulenza di design",
       "consultdesc": "2-3 giorni",

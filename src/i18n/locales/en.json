@@ -66,6 +66,8 @@
       "desc":"Choose a date that works for you and let's discuss how I can help with your project.",
       "date":"Select a date",
       "button":"Book Now",
+      "emailsubject":"Booking Request",
+      "emailbody":"I would like to book your services",
       "availability":"My Availability",
       "consultation":"Design Consultation",
       "consultdesc":"2-3 Days",
