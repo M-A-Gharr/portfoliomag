@@ -1,8 +1,9 @@
-import { useState, useRef } from 'react';
-import TestimonialsCarousel from './testimonials/TestimonialsCarousel';
-import BlogPostsCarousel from './blog/BlogPostsCarousel';
-import FreelanceAvailability from './freelance/FreelanceAvailability';
+import { useState, useRef, lazy, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
+
+const TestimonialsCarousel = lazy(() => import('./testimonials/TestimonialsCarousel'));
+const BlogPostsCarousel = lazy(() => import('./blog/BlogPostsCarousel'));
+const FreelanceAvailability = lazy(() => import('./freelance/FreelanceAvailability'));
 
 const BonusProfessionnelsSection = () => {
   const { t } = useTranslation();
@@ -28,13 +29,17 @@ const BonusProfessionnelsSection = () => {
             {/* Testimonials */}
             <div className="bg-secondary/20 border border-secondary/20 rounded-xl p-6 min-h-[400px] transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
               <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.testimonials`)}</h3>
-              <TestimonialsCarousel />
+              <Suspense fallback={<div className="animate-pulse h-48 bg-secondary/20 rounded-xl" />}>
+                <TestimonialsCarousel />
+              </Suspense>
             </div>
 
             {/* Blog */}
             <div className="bg-secondary/20 border border-secondary/20 rounded-xl p-6 min-h-[400px] transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
               <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.blog`)}</h3>
-              <BlogPostsCarousel />
+              <Suspense fallback={<div className="animate-pulse h-48 bg-secondary/20 rounded-xl" />}>
+                 <BlogPostsCarousel />
+              </Suspense>
             </div>
           </div>
 
@@ -42,7 +47,9 @@ const BonusProfessionnelsSection = () => {
           <div className="lg:col-span-2">
             <div className="h-full min-h-[820px] bg-secondary/20 border border-secondary/20 rounded-xl p-6 transition-all duration-300 hover:border-highlight hover:shadow-xl hover:shadow-highlight/10 animate-fade-in">
               <h3 className="text-2xl font-semibold text-foreground mb-4">{t(`bonus.availability`)}</h3>
-              <FreelanceAvailability />
+              <Suspense fallback={<div className="animate-pulse h-48 bg-secondary/20 rounded-xl" />}>
+                 <FreelanceAvailability />
+              </Suspense>
             </div>
           </div>
         </div>
