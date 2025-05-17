@@ -171,9 +171,9 @@ const AboutSection = () => {
           <Element name="book" className='w-full flex justify-center mt-10'>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full">
               <div>
-                <h3 className="text-2xl font-bold mb-4">Ready to collaborate?</h3>
+                <h3 className="text-2xl font-bold mb-4">{t('about.book.title')}</h3>
                 <p className="text-muted-foreground mb-6">
-                  Choose a date that works for you and let's discuss how I can help with your project.
+                  {t('about.book.desc')}
                 </p>
                 
                 <div className="flex flex-wrap gap-3 mb-6">
@@ -199,7 +199,7 @@ const AboutSection = () => {
                         !date && "text-muted-foreground"
                       )}>
                         <CalendarIcon className="mr-2 h-4 w-4" />
-                        {date ? format(date, "PPP") : "Select a date"}
+                        {date ? format(date, "PPP") : t('about.book.date')}
                       </Button>
                     </PopoverTrigger>
                     <PopoverContent className="w-auto p-0" align="start">
@@ -219,7 +219,7 @@ const AboutSection = () => {
                     className="bg-highlight hover:bg-highlight-dark text-white w-full sm:w-auto"
                     onClick={handleBookNow}
                   >
-                    Book Now
+                    {t('about.book.button')}
                   </Button>
                 </div>
               </div>
@@ -228,25 +228,25 @@ const AboutSection = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-blue-500/10 rounded-full filter blur-3xl"></div>
                   <div className="relative bg-blue-950/40 border border-blue-800/30 rounded-lg p-6 backdrop-blur-sm">
-                    <h4 className="text-lg font-medium mb-4">My Availability</h4>
+                    <h4 className="text-lg font-medium mb-4">{t('about.book.availability')}</h4>
                     <Separator className="my-3 bg-blue-800/30" />
                     <ul className="space-y-2">
                       <li className="flex justify-between">
-                        <span>Design Consultation</span>
-                        <Badge>2-3 Days</Badge>
+                        <span>{t('about.book.consultation')}</span>
+                        <Badge>{t('about.book.consultdesc')}</Badge>
                       </li>
                       <li className="flex justify-between">
-                        <span>Development Project</span>
-                        <Badge>1-2 Weeks</Badge>
+                        <span>{t('about.book.dev')}</span>
+                        <Badge>{t('about.book.devdesc')}</Badge>
                       </li>
                       <li className="flex justify-between">
-                        <span>Technical Review</span>
-                        <Badge>24 Hours</Badge>
+                        <span>{t('about.book.techreview')}</span>
+                        <Badge>{t('about.book.techreviewtime')}</Badge>
                       </li>
                     </ul>
                     <Separator className="my-3 bg-blue-800/30" />
                     <p className="text-sm text-muted-foreground">
-                      Response time: Usually within 24 hours
+                      {t('about.book.responsetime')}
                     </p>
                   </div>
                 </div>

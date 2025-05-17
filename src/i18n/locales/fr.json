@@ -4,7 +4,7 @@
     "skills": "Compétences",
     "projects": "Projets",
     "certificates": "Certificats",
-    "bonus":"Bonus Professionnels",
+    "bonus": "Bonus Professionnels",
     "contact": "Contact"
   },
   "hero": {
@@ -29,9 +29,9 @@
       "education": "2018 - 2020",
       "educationRole": "Formation Développeur Web",
       "educationDesc": "Apprentissage des fondamentaux du développement web et des bonnes pratiques.",
-      "hnd":"Diplome Superieur en CyberSécurité et Cloud",
-      "hndYears":"2022-2024",
-      "hndDesc":"Acquérir des compétences pratiques et théoriques en CyberSécurité, infrastructures Cloud et protection des réseaux"
+      "hnd": "Diplome Superieur en CyberSécurité et Cloud",
+      "hndYears": "2022-2024",
+      "hndDesc": "Acquérir des compétences pratiques et théoriques en CyberSécurité, infrastructures Cloud et protection des réseaux"
     },
     "goals": {
       "title": "Mes objectifs",
@@ -48,20 +48,34 @@
         "desc": "Concevoir des expériences utilisateur intuitives et accessibles."
       }
     },
-    "services":{
-      "title":"Services I Offer",
-      "web":{
-        "title":"Développement Web",
-        "desc":"Building responsive and performant web applications with modern frameworks and best practices."
+    "services": {
+      "title": "Services I Offer",
+      "web": {
+        "title": "Développement Web",
+        "desc": "Building responsive and performant web applications with modern frameworks and best practices."
       },
-      "front":{
-        "title":"Développement Frontend",
-        "desc":"Creating beautiful user interfaces with attention to detail, performance, and accessibility."
+      "front": {
+        "title": "Développement Frontend",
+        "desc": "Creating beautiful user interfaces with attention to detail, performance, and accessibility."
       },
-      "ui":{
-        "title":"Design UI/UX",
-        "desc":"Designing user-centered interfaces that are both visually appealing and functionally intuitive."
+      "ui": {
+        "title": "Design UI/UX",
+        "desc": "Designing user-centered interfaces that are both visually appealing and functionally intuitive."
       }
+    },
+    "book": {
+      "title": "Prêt à collaborer ?",
+      "desc": "Choisissez une date qui vous convient et discutons de la manière dont je peux vous aider dans votre projet.",
+      "date": "Sélectionner une date",
+      "button": "Réserver maintenant",
+      "availability": "Mes disponibilités",
+      "consultation": "Consultation design",
+      "consultdesc": "2-3 jours",
+      "dev": "Projet de développement",
+      "devdesc": "1-2 semaines",
+      "techreview": "Revue technique",
+      "techreviewtime": "24 heures",
+      "responsetime": "Délai de réponse : généralement sous 24 heures"
     }
   },
   "skills": {
@@ -87,7 +101,14 @@
       "1": {
         "title": "SaaS pour Boulangeries",
         "description": "Une plateforme SaaS complète pour les boulangeries, offrant la gestion des stocks, les commandes en ligne et l’analyse des ventes.",
-        "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "AWS"],
+        "technologies": [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "Stripe",
+          "AWS"
+        ],
         "features": [
           "Gestion des stocks en temps réel",
           "Système de commande en ligne",
@@ -106,7 +127,12 @@
       "2": {
         "title": "Site Web de Boulangerie",
         "description": "Un site vitrine élégant pour une boulangerie, mettant en valeur les produits, les services et les informations de contact.",
-        "technologies": ["React", "Next.js", "Tailwind CSS", "Prismic CMS"],
+        "technologies": [
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Prismic CMS"
+        ],
         "features": [
           "Design entièrement responsive",
           "Catalogue de produits",
@@ -123,7 +149,12 @@
       "3": {
         "title": "Portfolio",
         "description": "Un modèle de portfolio moderne et personnalisable pour les professionnels souhaitant mettre en valeur leurs travaux et compétences.",
-        "technologies": ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Framer Motion",
+          "Tailwind CSS"
+        ],
         "features": [
           "Thèmes personnalisables",
           "Sections modulaires",
@@ -140,7 +171,14 @@
       "4": {
         "title": "E-commerce",
         "description": "Une plateforme e-commerce complète avec gestion des produits, panier, paiements sécurisés et suivi des commandes.",
-        "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
+        "technologies": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "Stripe",
+          "Redux",
+          "Express"
+        ],
         "features": [
           "Catalogue de produits filtrable",
           "Panier persistant",
@@ -153,7 +191,7 @@
   "certificates": {
     "title": "Certificats & Formation",
     "subtitle": "Mes qualifications et certificats dans le domaine du développement web",
-    "sub":"Certificats",
+    "sub": "Certificats",
     "education": {
       "title": "Formation",
       "degree": "Ingénieur en Informatique",
@@ -184,8 +222,8 @@
     "testimonials": "Témoignages",
     "blog": "Blog Tech",
     "availability": "Disponibilité Freelance",
-    "read":"Lire Plus",
-    "close":"Fermer",
+    "read": "Lire Plus",
+    "close": "Fermer",
     "testimonialsData": [
       {
         "id": 1,
@@ -204,7 +242,8 @@
         "author": "Hicham Benmetraf",
         "role": "Lead Developer, CellInnovation",
         "quote": "Un collaborateur fiable et créatif qui a considérablement amélioré notre stack technique et nos processus de développement."
-      }],
+      }
+    ],
     "blogPosts": [
       {
         "id": 1,
@@ -229,8 +268,9 @@
         "content": "Cet article plonge dans les fonctionnalités avancées de TypeScript spécifiquement utiles pour les développeurs React. Nous couvrirons les types génériques, les types conditionnels, les types mappés et les concepts de type avancés.\n\nVous apprendrez à créer des composants fortement typés qui sont à la fois flexibles et sûrs, à utiliser efficacement les inférences de type, et à éviter les pièges courants. Nous explorerons également des bibliothèques comme zod et yup pour la validation de schéma, ainsi que des stratégies pour gérer l'état global avec une sécurité de type complète.",
         "date": "2025-02-15",
         "url": "#blog-post-3"
-      }],
-  "freelance": {
+      }
+    ],
+    "freelance": {
       "availableForWork": "✅ Disponible pour missions freelance",
       "services": "Services proposés",
       "contactMe": "Me contacter",
@@ -247,7 +287,9 @@
         "Conception et gestion de bases de données",
         "Optimisation des performances et de l’évolutivité",
         "Conseil technique et planification de l’architecture"
-      ]}},
+      ]
+    }
+  },
   "contact": {
     "title": "Contact",
     "subtitle": "Vous avez un projet ou une question ? N'hésitez pas à me contacter !",

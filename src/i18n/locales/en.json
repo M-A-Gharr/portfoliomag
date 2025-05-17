@@ -60,6 +60,20 @@
         "title":"UI/UX Design",
         "desc":"Designing user-centered interfaces that are both visually appealing and functionally intuitive."
       }
+    },
+    "book":{
+      "title":"Ready to collaborate?",
+      "desc":"Choose a date that works for you and let's discuss how I can help with your project.",
+      "date":"Select a date",
+      "button":"Book Now",
+      "availability":"My Availability",
+      "consultation":"Design Consultation",
+      "consultdesc":"2-3 Days",
+      "dev":"Development Project",
+      "devdesc":"1-2 Weeks",
+      "techreview":"Technical Review",
+      "techreviewtime":"24 Hours",
+      "responsetime":"Response time: Usually within 24 hours"
     }
   },
   "skills": {

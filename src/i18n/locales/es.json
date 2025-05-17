@@ -59,6 +59,20 @@
         "title": "Diseño UI/UX",
         "desc": "Diseñar interfaces centradas en el usuario que sean visualmente atractivas e intuitivas funcionalmente."
       }
+    },
+    "book": {
+      "title": "¿Listo para colaborar?",
+      "desc": "Elige una fecha que te funcione y hablemos sobre cómo puedo ayudarte con tu proyecto.",
+      "date": "Seleccionar una fecha",
+      "button": "Reservar ahora",
+      "availability": "Mi disponibilidad",
+      "consultation": "Consulta de diseño",
+      "consultdesc": "2-3 días",
+      "dev": "Proyecto de desarrollo",
+      "devdesc": "1-2 semanas",
+      "techreview": "Revisión técnica",
+      "techreviewtime": "24 horas",
+      "responsetime": "Tiempo de respuesta: normalmente dentro de 24 horas"
     }
   },
   "skills": {
@@ -84,7 +98,14 @@
       "1": {
         "title": "Bakery SaaS",
         "description": "Una plataforma SaaS completa para panaderías, que ofrece gestión de inventarios, pedidos en línea y análisis de ventas.",
-        "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "AWS"],
+        "technologies": [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "Stripe",
+          "AWS"
+        ],
         "features": [
           "Gestión de inventario en tiempo real",
           "Sistema de pedidos en línea",
@@ -103,7 +124,12 @@
       "2": {
         "title": "Bakery Website",
         "description": "Un sitio web elegante para panaderías, destacando productos, servicios e información de contacto.",
-        "technologies": ["React", "Next.js", "Tailwind CSS", "Prismic CMS"],
+        "technologies": [
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Prismic CMS"
+        ],
         "features": [
           "Diseño responsivo",
           "Catálogo de productos",
@@ -120,7 +146,12 @@
       "3": {
         "title": "Portfolio",
         "description": "Una plantilla de portfolio moderna y personalizable para profesionales que desean mostrar su trabajo y habilidades.",
-        "technologies": ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Framer Motion",
+          "Tailwind CSS"
+        ],
         "features": [
           "Temas personalizables",
           "Secciones modulares",
@@ -137,7 +168,14 @@
       "4": {
         "title": "E-commerce",
         "description": "Una plataforma completa de comercio electrónico con gestión de productos, carrito de compras, pagos seguros y seguimiento de pedidos.",
-        "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
+        "technologies": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "Stripe",
+          "Redux",
+          "Express"
+        ],
         "features": [
           "Catálogo de productos filtrable",
           "Carrito de compras persistente",
@@ -147,7 +185,7 @@
       }
     }
   },
-   "certificates": {
+  "certificates": {
     "title": "Certificados y educación",
     "subtitle": "Mis cualificaciones y certificados en desarrollo web",
     "sub": "Certificados",
