@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { Card, CardHeader, CardContent, CardFooter, CardTitle, CardDescription } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 
@@ -39,6 +41,7 @@ const TestimonialsCarousel = () => {
   ];
 
   const [current, setCurrent] = useState(0);
+  const itemRefs = useRef<HTMLDivElement[]>([]);
   const [isMobile, setIsMobile] = useState(false);
 
   // Detect screen size
@@ -49,28 +52,45 @@ const TestimonialsCarousel = () => {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  const hasMounted = useRef(false);
+
+  useEffect(() => {
+    if (hasMounted.current) {
+      itemRefs.current[current]?.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest',
+      });
+    } else {
+      hasMounted.current = true;
+    }
+  }, [current]);
+
   const next = () => setCurrent((prev) => (prev + 1) % testimonials.length);
   const previous = () => setCurrent((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
 
   return (
-    <div className="w-full px-2">
-      {isMobile ? (
-        <div
-          className={`flex overflow-x-auto gap-4 snap-x snap-mandatory scroll-smooth ${
-            isRTL ? 'flex-row-reverse' : ''
-          }`}
-          dir={isRTL ? 'rtl' : 'ltr'}
-        >
-          {testimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className="min-w-full snap-center"
-            >
-              <div className="bg-card border rounded-xl p-6 shadow-md h-auto max-h-[400px] overflow-y-auto flex flex-col justify-between">
-                <div className="overflow-y-auto mb-4 pr-1">
-                  <p className="italic mb-4 text-base break-words max-w-full">{testimonial.quote}</p>
-                </div>
-                <div className="flex items-center gap-3 mt-auto">
+    <div className="w-full px-4">
+      <div
+        className={`flex overflow-x-auto gap-4 snap-x snap-mandatory scroll-smooth ${
+          isRTL ? 'flex-row-reverse' : ''
+        }`}
+        dir={isRTL ? 'rtl' : 'ltr'}
+      >
+        {testimonials.map((testimonial, index) => (
+          <div
+            key={testimonial.id}
+            ref={(el) => (itemRefs.current[index] = el!)}
+            className="min-w-full snap-center px-4"
+          >
+            <Card className="h-full w-full">
+              <CardHeader className="p-4 md:p-6">
+                <CardTitle className="text-base md:text-lg italic">
+                  “{testimonial.quote}”
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-3 mt-4">
                   <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
@@ -78,39 +98,19 @@ const TestimonialsCarousel = () => {
                   />
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-muted-foreground text-sm">{testimonial.role}</p>
+                    <CardDescription className="text-sm">{testimonial.role}</CardDescription>
                   </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div className="max-w-xl mx-auto text-center">
-          <div className="bg-card border rounded-xl p-6 shadow-md flex flex-col justify-between">
-            <p className="italic mb-4 text-base">{testimonials[current].quote}</p>
-            <div className="flex items-center gap-3 mt-auto justify-center">
-              <img
-                src={testimonials[current].avatar}
-                alt={testimonials[current].name}
-                className="w-10 h-10 rounded-full"
-              />
-              <div>
-                <p className="font-semibold">{testimonials[current].name}</p>
-                <p className="text-muted-foreground text-sm">{testimonials[current].role}</p>
-              </div>
-            </div>
+              </CardContent>
+              <CardFooter className="p-4" />
+            </Card>
           </div>
-          <div className="flex justify-center mt-4 gap-4">
-            <button onClick={previous} className="p-2 bg-muted rounded-full hover:bg-muted-foreground transition-all">
-              ←
-            </button>
-            <button onClick={next} className="p-2 bg-muted rounded-full hover:bg-muted-foreground transition-all">
-              →
-            </button>
-          </div>
-        </div>
-      )}
+        ))}
+      </div>
+      <div className="flex justify-center gap-4 mt-4">
+        <Button onClick={previous} variant="outline" size="sm">←</Button>
+        <Button onClick={next} variant="outline" size="sm">→</Button>
+      </div>
     </div>
   );
 };

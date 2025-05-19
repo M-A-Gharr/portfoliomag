@@ -127,7 +127,7 @@ const ProjectsSection = () => {
                 <div className="flex flex-wrap gap-2">
                 {Array.isArray(t(`projects.items.${project.id}.technologies`, { returnObjects: true })) &&
   (t(`projects.items.${project.id}.technologies`, { returnObjects: true }) as string[]).map((tech, i) => (
-                    <Badge key={tech} variant="outline" className="bg-secondary/30 hover:bg-secondary/50 animate-scale-in duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 hover:rounded-lg">
+                    <Badge key={tech} variant="outline" className="bg-secondary/30 hover:bg-secondary/50 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 hover:rounded-lg hover:scale-105 transition-all duration-[2000ms] ease-in-out">
                       {tech}
                     </Badge>
                   ))}
