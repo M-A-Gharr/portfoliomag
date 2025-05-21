@@ -157,7 +157,9 @@ const ProjectsSection = () => {
                   >
                     {project.images.map((img, i) => (
                       <SwiperSlide key={i}>
-                        <img src={img} alt={`Project ${project.id} Image ${i + 1}`} className="w-full h-64 object-cover transform scale-90 transition-transform duration-300 group-hover:scale-100" />
+                        <img src={img} alt={`Project ${project.id} Image ${i + 1}`}
+                            className="w-full h-64 object-cover transform scale-90 group-hover:scale-100 group-hover:brightness-110 transition-all duration-[2000ms] ease-in-out"/>
+
                         {project.captions && project.captions[i] && (
                           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-black/60 text-white text-sm px-4 py-2 text-center w-fit max-w-full rounded-md">
                             {project.captions[i]}

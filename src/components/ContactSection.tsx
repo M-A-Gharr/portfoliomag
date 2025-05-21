@@ -30,18 +30,18 @@ const ContactSection = () => {
     // Envoi de l'email vers TOI (Notification)
     emailjs
       .send(
-        'service_oxhbmv9',
+        'service_8nsntik',
         'template_ziyld0c',  // <-- Ton template qui t'envoie le message
         formData,
-        'NdM_lTI3uIV1Ov_Rt'
+        'vfswi8UCo__CgVoZo'
       )
       .then(() => {
         // Ensuite envoi de l'email de confirmation à l'utilisateur
         emailjs.send(
-          'service_oxhbmv9',
+          'service_8nsntik',
           'template_pnyo2ld', // <-- Ton template pour l'utilisateur
           formData,
-          'NdM_lTI3uIV1Ov_Rt'
+          'vfswi8UCo__CgVoZo'
         )
         .then(() => {
           console.log('SUCCESS!');
@@ -72,8 +72,8 @@ const ContactSection = () => {
     {
       icon: <Mail className="h-5 w-5 text-highlight" />,
       label: t('contact.info.email'),
-      value: "maminegharr@gmail.com",
-      link: "mailto:maminegharr@gmail.com"
+      value: "contact.maminegh@gmail.com",
+      link: "mailto:contact.maminegh@gmail.com"
     },
     {
       icon: <Phone className="h-5 w-5 text-highlight" />,
