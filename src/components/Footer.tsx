@@ -17,7 +17,7 @@ const Footer = () => {
             smooth={true}
             offset={-70}
             duration={800}
-            className="p-3 bg-highlight hover:bg-highlight-dark text-white rounded-full cursor-pointer transition-colors"
+            className="p-3 bg-[#483dfb] hover:bg-[#483dfb]-dark text-white rounded-full cursor-pointer transition-colors"
           >
             <ArrowUp size={28} />
           </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a 
                 href="mailto:maminegharr@gmail.com" 
-                className="p-3 bg-secondary/50 hover:bg-highlight/80 text-foreground hover:text-white rounded-full transition-colors"
+                className="p-3 bg-secondary/50 hover:bg-[#483dfb]/80 text-foreground hover:text-white rounded-full transition-colors"
               >
                 <Mail size={20} />
               </a>
@@ -44,7 +44,7 @@ const Footer = () => {
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-3 bg-secondary/50 hover:bg-highlight/80 text-foreground hover:text-white rounded-full transition-colors"
+                className="p-3 bg-secondary/50 hover:bg-[#483dfb]/80 text-foreground hover:text-white rounded-full transition-colors"
               >
                 <Github size={20} />
               </a>
@@ -52,7 +52,7 @@ const Footer = () => {
                 href="https://linkedin.com/in/m-amine-gharrab" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-3 bg-secondary/50 hover:bg-highlight/80 text-foreground hover:text-white rounded-full transition-colors"
+                className="p-3 bg-secondary/50 hover:bg-[#483dfb]/80 text-foreground hover:text-white rounded-full transition-colors"
               >
                 <Linkedin size={20} />
               </a>

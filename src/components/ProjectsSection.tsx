@@ -46,7 +46,7 @@ const ProjectsSection = () => {
   const projects: Project[] = [
     {
       id: 1,
-      icon: <ShoppingBag className="h-8 w-8 text-highlight" />,
+      icon: <ShoppingBag className="h-8 w-8 text-[#483dfb]" />,
       link: "#",
       demo: "#",
       images: ["/images/bakerysaas/Screenshot1.png","/images/bakerysaas/Screenshot2.png","/images/bakerysaas/Screenshot3.png","/images/bakerysaas/Screenshot4.png","/images/bakerysaas/Screenshot5.png","/images/bakerysaas/Screenshot6.png"],
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      icon: <Globe className="h-8 w-8 text-highlight" />,
+      icon: <Globe className="h-8 w-8 text-[#483dfb]" />,
       link: "#",
       demo: "#",
       images:["/images/bakerysite/Screenshot1.png","/images/bakerysite/Screenshot2.png","/images/bakerysite/Screenshot3.png","/images/bakerysite/Screenshot4.png"],
@@ -62,7 +62,7 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      icon: <User className="h-8 w-8 text-highlight" />,
+      icon: <User className="h-8 w-8 text-[#483dfb]" />,
       link: "#",
       demo: "#",
       images:["/images/portfolio/Screenshot1.png","/images/portfolio/Screenshot2.png","/images/portfolio/Screenshot3.png", "/images/portfolio/Screenshot4.png"],
@@ -70,7 +70,7 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      icon: <ShoppingBag className="h-8 w-8 text-highlight" />,
+      icon: <ShoppingBag className="h-8 w-8 text-[#483dfb]" />,
       link: "#",
       demo: "#",
       images:[]
@@ -88,7 +88,7 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <motion.div 
             key={project.id}
-            className="group bg-secondary/20 border border-secondary/20 rounded-xl overflow-hidden transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 animate-scale-in"
+            className="group bg-secondary/20 border border-secondary/20 rounded-xl overflow-hidden transition-all duration-300 hover:border-[#483dfb]/40 hover:shadow-lg hover:shadow-[#483dfb]/10 animate-scale-in"
             style={{ animationDelay: `${index * 0.1}s` }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -127,7 +127,7 @@ const ProjectsSection = () => {
                 <div className="flex flex-wrap gap-2">
                 {Array.isArray(t(`projects.items.${project.id}.technologies`, { returnObjects: true })) &&
   (t(`projects.items.${project.id}.technologies`, { returnObjects: true }) as string[]).map((tech, i) => (
-                    <Badge key={tech} variant="outline" className="bg-secondary/30 hover:bg-secondary/50 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 hover:rounded-lg hover:scale-105 transition-all duration-[2000ms] ease-in-out">
+                    <Badge key={tech} variant="outline" className="bg-secondary/30 hover:bg-secondary/50 hover:border-[#483dfb]/40 hover:shadow-lg hover:shadow-[#483dfb]/10 hover:rounded-lg hover:scale-105 transition-all duration-[2000ms] ease-in-out">
                       {tech}
                     </Badge>
                   ))}

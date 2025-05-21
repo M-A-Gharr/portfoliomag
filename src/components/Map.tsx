@@ -82,13 +82,13 @@ const Map = () => {
             />
             <button
               type="submit"
-              className="px-3 py-2 bg-highlight hover:bg-highlight-dark text-white rounded-md text-sm transition-colors"
+              className="px-3 py-2 bg-[#483dfb] hover:bg-[#483dfb]-dark text-white rounded-md text-sm transition-colors"
             >
               {t('map.submit', 'Submit')}
             </button>
           </form>
           <p className="text-xs text-foreground/60 mt-2 text-center">
-            {t('map.getToken', 'You can get a token at')} <a href="https://account.mapbox.com" target="_blank" rel="noopener noreferrer" className="text-highlight hover:underline">mapbox.com</a>
+            {t('map.getToken', 'You can get a token at')} <a href="https://account.mapbox.com" target="_blank" rel="noopener noreferrer" className="text-[#483dfb] hover:underline">mapbox.com</a>
           </p>
         </div>
       ) : null}

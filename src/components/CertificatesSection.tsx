@@ -28,11 +28,11 @@ const CertificatesSection = () => {
           <Card className="overflow-hidden ">
             <CardContent className="p-6 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
               <div className="flex items-center mb-4 ">
-                <GraduationCap className="text-highlight mr-3 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4" size={28} />
+                <GraduationCap className="text-[#483dfb] mr-3 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4" size={28} />
                 <h3 className="text-xl font-semibold">{t('certificates.education.title')}</h3>
               </div>
               
-              <div className="mb-4 border-l-2 border-highlight pl-4 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
+              <div className="mb-4 border-l-2 border-[#483dfb] pl-4 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
                 <h4 className="text-lg font-medium">{t('certificates.education.degree')}</h4>
                 <p className="text-muted-foreground">{t('certificates.education.university')}, {t('certificates.education.years')}</p>
                 <ul className="mt-2 space-y-1 text-sm">
@@ -48,17 +48,17 @@ const CertificatesSection = () => {
           <Card className="overflow-hidden">
             <CardContent className="p-6 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
               <div className="flex items-center mb-4">
-                <Book className="text-highlight mr-3 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4" size={28} />
+                <Book className="text-[#483dfb] mr-3 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4" size={28} />
                 <h3 className="text-xl font-semibold">{t('certificates.academic.title')}</h3>
               </div>
               
-              <div className="mb-4 border-l-2 border-highlight pl-4 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
+              <div className="mb-4 border-l-2 border-[#483dfb] pl-4 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
                 <h4 className="text-lg font-medium">{t('certificates.academic.bachelor')}</h4>
                 <p className="text-muted-foreground">{t('certificates.academic.bachelorYears')}</p>
                 <p className="mt-1 text-sm">{t('certificates.academic.bachelorDesc')}</p>
               </div>
               
-              <div className="mb-4 border-l-2 border-highlight pl-4 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
+              <div className="mb-4 border-l-2 border-[#483dfb] pl-4 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
                 <h4 className="text-lg font-medium">{t('certificates.academic.hnd')}</h4>
                 <p className="text-muted-foreground">{t('certificates.academic.hndYears')}</p>
                 <p className="mt-1 text-sm">{t('certificates.academic.hndDesc')}</p>
@@ -70,11 +70,11 @@ const CertificatesSection = () => {
           <Card className="overflow-hidden">
             <CardContent className="p-6 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
               <div className="flex items-center mb-4">
-                <BookOpen className="text-highlight mr-3 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4" size={28} />
+                <BookOpen className="text-[#483dfb] mr-3 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4" size={28} />
                 <h3 className="text-xl font-semibold">{t('certificates.continuous.title')}</h3>
               </div>
               
-              <div className="border-l-2 border-highlight pl-4 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
+              <div className="border-l-2 border-[#483dfb] pl-4 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4">
                 <h4 className="text-lg font-medium">{t('certificates.continuous.online')}</h4>
                 <p className="text-muted-foreground">{t('certificates.continuous.onlineYears')}</p>
                 <p className="mt-1 text-sm">{t('certificates.continuous.onlineDesc')}</p>
@@ -88,7 +88,7 @@ const CertificatesSection = () => {
           <Card className="h-full">
             <CardContent className="p-6">
               <div className="flex items-center mb-6">
-                <Award className="text-highlight mr-3 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4" size={28} />
+                <Award className="text-[#483dfb] mr-3 transition-all duration-300 ease-in-out hover:bg-muted hover:shadow-md hover:scale-[1.01] hover:border-l-4" size={28} />
                 <h3 className="text-xl font-semibold">{t('certificates.sub')}</h3>
               </div>
               

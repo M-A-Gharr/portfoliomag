@@ -41,7 +41,7 @@ const ThemeSwitcher = () => {
       <Switch
         checked={theme === "dark"}
         onCheckedChange={toggleTheme}
-        className="data-[state=checked]:bg-highlight"
+        className="data-[state=checked]:bg-[#483dfb]"
       />
       <Button
         variant="ghost"

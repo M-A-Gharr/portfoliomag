@@ -10,8 +10,8 @@ const HeroSection = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background/95"></div>
-        <div className="absolute top-40 left-20 w-72 h-72 bg-highlight/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-40 right-20 w-72 h-72 bg-highlight-dark/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-40 left-20 w-72 h-72 bg-[#483dfb]/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-40 right-20 w-72 h-72 bg-[#483dfb]-dark/20 rounded-full blur-3xl"></div>
       </div>
 
        <video
@@ -34,8 +34,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background/70 to-background/90 z-10"></div>
 
       {/* Animated bubbles */}
-      <div className="absolute top-40 left-20 w-72 h-72 bg-highlight/20 rounded-full blur-3xl z-10"></div>
-      <div className="absolute bottom-40 right-20 w-72 h-72 bg-highlight-dark/20 rounded-full blur-3xl z-10"></div>
+      <div className="absolute top-40 left-20 w-72 h-72 bg-[#483dfb]/20 rounded-full blur-3xl z-10"></div>
+      <div className="absolute bottom-40 right-20 w-72 h-72 bg-[#483dfb]-dark/20 rounded-full blur-3xl z-10"></div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
@@ -53,7 +53,7 @@ const HeroSection = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="relative cursor-pointer inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-highlight hover:bg-highlight-dark rounded-md group"
+            className="relative cursor-pointer inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-[#483dfb] hover:bg-[#483dfb]-dark rounded-md group"
             aria-label="Scroll to About Section"
           >
             <span className="relative text-white">{t('hero.cta.discover')}</span>
@@ -65,7 +65,7 @@ const HeroSection = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-transparent border border-highlight text-highlight hover:text-white hover:bg-highlight-dark rounded-md group"
+            className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-transparent border border-[#483dfb] text-[#483dfb] hover:text-white hover:bg-[#483dfb]-dark rounded-md group"
           >
             <span className="relative">{t('hero.cta.projects')}</span>
           </Link>
@@ -80,7 +80,7 @@ const HeroSection = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="cursor-pointer justify-center text-foreground/70 hover:text-highlight transition-colors"
+            className="cursor-pointer justify-center text-foreground/70 hover:text-[#483dfb] transition-colors"
           >
             <ArrowDown size={28} />
           </Link>

@@ -53,9 +53,9 @@ const FreelanceAvailability = () => {
   };
 
   return (
-    <Card className="border border-highlight overflow-hidden hover:shadow-md transition-all duration-300 w-full max-w-[700px] mx-auto">
+    <Card className="border border-[#483dfb] overflow-hidden hover:shadow-md transition-all duration-300 w-full max-w-[700px] mx-auto">
       <CardHeader className="bg-blue-50 dark:bg-blue-900/20">
-        <CardTitle className="text-xl text-center text-blue-600 dark:text-indigo-300">
+        <CardTitle className="text-xl text-center text-blue-600 dark:text-[#483dfb]-300">
           {t(`bonus.freelance.availableForWork`)}
         </CardTitle>
       </CardHeader>
@@ -78,7 +78,7 @@ const FreelanceAvailability = () => {
               key={index} 
               variant="outline" 
               className={cn(
-                "bg-blue-50 dark:bg-blue-900/20 transition-all ease-in-out animate-scale-in hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/15",
+                "bg-blue-50 dark:bg-blue-900/20 transition-all ease-in-out animate-scale-in hover:border-[#483dfb]/40 hover:shadow-lg hover:shadow-[#483dfb]/15",
                 "flex items-center gap-1 py-1 px-3"
               )}
             >
@@ -90,7 +90,7 @@ const FreelanceAvailability = () => {
       </CardContent>
       <CardFooter className="flex flex-col sm:flex-row sm:justify-between gap-3 px-4 pb-4">
         <Button 
-          className="relative inline-flex items-center justify-center sm:flex-row w-4/6 py-3 bg-highlight hover:bg-highlight-dark text-white sm:w-auto"
+          className="relative inline-flex items-center justify-center sm:flex-row w-4/6 py-3 bg-[#483dfb] hover:bg-[#483dfb]-dark text-white sm:w-auto"
           onClick={() => {
             const contactSection = document.getElementById('contact');
             if (contactSection) {
@@ -102,7 +102,7 @@ const FreelanceAvailability = () => {
         </Button>
         <Button 
           variant="outline"
-          className="relative inline-flex items-center justify-center w-5/6 px-6 py-3 overflow-hidden font-medium transition-all bg-transparent border border-highlight text-highlight hover:text-white hover:bg-highlight-dark rounded-md group"
+          className="relative inline-flex items-center justify-center w-5/6 px-6 py-3 overflow-hidden font-medium transition-all bg-transparent border border-[#483dfb] text-[#483dfb] hover:text-white hover:bg-[#483dfb]-dark rounded-md group"
           onClick={handleCVDownload}
         >
           <Download className="h-4 w-4" />

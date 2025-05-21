@@ -70,7 +70,7 @@ const Header = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              className="text-foreground hover:text-highlight transition-colors cursor-pointer"
+              className="text-foreground hover:text-[#483dfb] transition-colors cursor-pointer"
             >
               {link.name}
             </Link>
@@ -107,7 +107,7 @@ const Header = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
-                  className="py-3 text-foreground hover:text-highlight transition-colors cursor-pointer"
+                  className="py-3 text-foreground hover:text-[#483dfb] transition-colors cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}

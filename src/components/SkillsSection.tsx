@@ -25,7 +25,7 @@ const SkillsSection = () => {
   const skillCategories: SkillCategory[] = [
     {
       name: t('skills.frontend'),
-      icon: <Layout className="h-6 w-6 text-highlight" />,
+      icon: <Layout className="h-6 w-6 text-[#483dfb]" />,
       skills: [
         { name: 'React', level: 90 },
         { name: 'HTML5', level: 95 },
@@ -38,7 +38,7 @@ const SkillsSection = () => {
     },
     {
       name: t('skills.backend'),
-      icon: <Database className="h-6 w-6 text-highlight" />,
+      icon: <Database className="h-6 w-6 text-[#483dfb]" />,
       skills: [
         { name: 'Node.js', level: 85 },
         { name: 'Express.js', level: 80 },
@@ -49,7 +49,7 @@ const SkillsSection = () => {
     },
     {
       name: t('skills.tools'),
-      icon: <GitBranch className="h-6 w-6 text-highlight" />,
+      icon: <GitBranch className="h-6 w-6 text-[#483dfb]" />,
       skills: [
         { name: 'Git', level: 90 },
         { name: 'GitHub', level: 85 },
@@ -60,7 +60,7 @@ const SkillsSection = () => {
     },
     {
       name: t('skills.other'),
-      icon: <Palette className="h-6 w-6 text-highlight" />,
+      icon: <Palette className="h-6 w-6 text-[#483dfb]" />,
       skills: [
         { name: 'Figma', level: 75 },
         { name: 'Canva', level: 80 },
@@ -70,7 +70,7 @@ const SkillsSection = () => {
     },
     {
       name: t('skills.professional'),
-      icon: <Lightbulb className="h-6 w-6 text-highlight" />,
+      icon: <Lightbulb className="h-6 w-6 text-[#483dfb]" />,
       skills: [
         { name: t('skills.restApi'), level: 85 },
         { name: t('skills.seo'), level: 80 },
@@ -90,7 +90,7 @@ const SkillsSection = () => {
         {skillCategories.map((category, index) => (
           <div 
             key={category.name}
-            className="bg-secondary/20 rounded-xl p-6 animate-slide-in-bottom group border border-secondary/20 overflow-hidden transition-all duration-300 hover:border-highlight/60 hover:shadow-lg hover:shadow-highlight/60"
+            className="bg-secondary/20 rounded-xl p-6 animate-slide-in-bottom group border border-secondary/20 overflow-hidden transition-all duration-300 hover:border-[#483dfb]/60 hover:shadow-lg hover:shadow-[#483dfb]/60"
             style={{ animationDelay: `${index * 0.1 + 0.2}s` }}
           >
             <div className="flex items-center mb-6">
@@ -100,14 +100,14 @@ const SkillsSection = () => {
             
             <div className="space-y-5">
               {category.skills.map((skill) => (
-                <div key={skill.name} className="space-y-2 group bg-secondary/20 border border-secondary/20 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-highlight/60 animate-scale-in">
+                <div key={skill.name} className="space-y-2 group bg-secondary/20 border border-secondary/20 overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[#483dfb]/60 animate-scale-in">
                   <div className="flex justify-between">
                     <span className="text-sm font-medium">{skill.name}</span>
                     <span className="text-xs text-muted-foreground">{skill.level}%</span>
                   </div>
                   <div className="h-2 bg-secondary/50 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-highlight transition-all duration-300 ease-out hover:shadow-md"
+                      className="h-full bg-[#483dfb] transition-all duration-300 ease-out hover:shadow-md"
                       style={{ 
                         width: `${skill.level}%`,
                         animation: 'growWidth 1.5s ease-out'
@@ -126,7 +126,7 @@ const SkillsSection = () => {
           <Badge 
             key={skill} 
             variant="outline"
-            className="bg-secondary/30 text-foreground px-3 py-1 text-sm animate-scale-in duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 hover:rounded-lg"
+            className="bg-secondary/30 text-foreground px-3 py-1 text-sm animate-scale-in duration-300 hover:border-[#483dfb]/40 hover:shadow-lg hover:shadow-[#483dfb]/10 hover:rounded-lg"
           >
             {skill}
           </Badge>

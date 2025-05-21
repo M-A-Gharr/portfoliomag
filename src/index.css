@@ -159,7 +159,7 @@
 
 @layer base {
   * {
-    @apply border-border selection:bg-highlight/30 selection:text-foreground;
+    @apply border-border selection:bg-[#483dfb]/30 selection:text-foreground;
   }
 
   html {
@@ -177,7 +177,7 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-br from-highlight to-highlight-dark bg-clip-text text-transparent;
+    @apply bg-gradient-to-br from-[#483dfb] to-highlight-dark bg-clip-text text-transparent;
   }
   
   .section-container {

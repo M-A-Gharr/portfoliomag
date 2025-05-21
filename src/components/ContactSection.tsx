@@ -64,25 +64,25 @@ const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: <MapPin className="h-5 w-5 text-highlight" />,
+      icon: <MapPin className="h-5 w-5 text-[#483dfb]" />,
       label: t('contact.info.address'),
       value: t('contact.info.addressValue', 'Dubai, UAE'),
       link: null
     },
     {
-      icon: <Mail className="h-5 w-5 text-highlight" />,
+      icon: <Mail className="h-5 w-5 text-[#483dfb]" />,
       label: t('contact.info.email'),
       value: "contact.maminegh@gmail.com",
       link: "mailto:contact.maminegh@gmail.com"
     },
     {
-      icon: <Phone className="h-5 w-5 text-highlight" />,
+      icon: <Phone className="h-5 w-5 text-[#483dfb]" />,
       label: t('contact.info.phone'),
       value: "+971 55 388 2105",
       link: "tel:+971553882105"
     },
     {
-      icon: <Linkedin className="h-5 w-5 text-highlight" />,
+      icon: <Linkedin className="h-5 w-5 text-[#483dfb]" />,
       label: t('contact.info.linkedin'),
       value: "linkedin.com/in/m-amine-gharrab",
       link: "https://linkedin.com/in/m-amine-gharrab"
@@ -102,7 +102,7 @@ const ContactSection = () => {
           <h3 className="text-2xl font-semibold mb-6">{t('contact.form.title')}</h3>
           
           {isSubmitted ? (
-            <div className="p-4 bg-highlight/20 border border-highlight/30 rounded-lg mb-6">
+            <div className="p-4 bg-[#483dfb]/20 border border-[#483dfb]/30 rounded-lg mb-6">
               <p className="text-foreground font-medium">
                 {t('contact.form.success')}
               </p>
@@ -110,7 +110,7 @@ const ContactSection = () => {
           ) : null}
           
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className='transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 animate-scale-in'>
+            <div className='transition-all duration-300 hover:border-[#483dfb] hover:shadow-lg hover:shadow-[#483dfb]/10 animate-scale-in'>
               <Label htmlFor="name">{t('contact.form.name')}</Label>
               <Input
                 id="name"
@@ -123,7 +123,7 @@ const ContactSection = () => {
               />
             </div>
             
-            <div className='transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 animate-scale-in'>
+            <div className='transition-all duration-300 hover:border-[#483dfb]/40 hover:shadow-lg hover:shadow-[#483dfb]/10 animate-scale-in'>
               <Label htmlFor="email">{t('contact.form.email')}</Label>
               <Input
                 id="email"
@@ -137,7 +137,7 @@ const ContactSection = () => {
               />
             </div>
             
-            <div className='transition-all duration-300 hover:border-highlight/40 hover:shadow-lg hover:shadow-highlight/10 animate-scale-in'>
+            <div className='transition-all duration-300 hover:border-[#483dfb]/40 hover:shadow-lg hover:shadow-[#483dfb]/10 animate-scale-in'>
               <Label htmlFor="message">{t('contact.form.message')}</Label>
               <Textarea
                 id="message"
@@ -152,7 +152,7 @@ const ContactSection = () => {
             
             <Button 
               type="submit" 
-              className="w-full bg-highlight hover:bg-highlight-dark text-white"
+              className="w-full bg-[#483dfb] hover:bg-[#483dfb]-dark text-white"
               disabled={isSubmitting}
             >
               {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
@@ -178,7 +178,7 @@ const ContactSection = () => {
                         href={item.link} 
                         target={item.link.startsWith('http') ? '_blank' : undefined}
                         rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="text-foreground hover:text-highlight transition-colors"
+                        className="text-foreground hover:text-[#483dfb] transition-colors"
                       >
                         {item.value}
                       </a>
