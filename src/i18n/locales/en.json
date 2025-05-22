@@ -1,14 +1,17 @@
-
 {
   "nav": {
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
     "certificates": "Certificates",
-    "bonus":"Professional Bonus",
+    "bonus": "Professional Bonus",
     "contact": "Contact"
   },
   "hero": {
+    "meta": {
+      "title": "Fullstack Developer",
+      "description": "Développeur web passionné spécialisé en UI/UX, React, et solutions modernes."
+    },
     "title": "Fullstack Developer",
     "subtitle": "Passionate about creating modern and intuitive web applications",
     "cta": {
@@ -19,6 +22,10 @@
   },
   "about": {
     "title": "About",
+    "meta": {
+      "title": "About Mohamed Amine Gharrab",
+      "description": "Développeur web passionné spécialisé en UI/UX, React, et solutions modernes."
+    },
     "resume": {
       "title": "My Journey",
       "current": "2022 - Present",
@@ -46,40 +53,44 @@
         "desc": "Design intuitive and accessible user experiences."
       }
     },
-    "services":{
-      "title":"Services I Offer",
-      "web":{
-        "title":"Web Development",
-        "desc":"Building responsive and performant web applications with modern frameworks and best practices."
+    "services": {
+      "title": "Services I Offer",
+      "web": {
+        "title": "Web Development",
+        "desc": "Building responsive and performant web applications with modern frameworks and best practices."
       },
-      "front":{
-        "title":"Frontend Development",
-        "desc":"Creating beautiful user interfaces with attention to detail, performance, and accessibility."
+      "front": {
+        "title": "Frontend Development",
+        "desc": "Creating beautiful user interfaces with attention to detail, performance, and accessibility."
       },
-      "ui":{
-        "title":"UI/UX Design",
-        "desc":"Designing user-centered interfaces that are both visually appealing and functionally intuitive."
+      "ui": {
+        "title": "UI/UX Design",
+        "desc": "Designing user-centered interfaces that are both visually appealing and functionally intuitive."
       }
     },
-    "book":{
-      "title":"Ready to collaborate?",
-      "desc":"Choose a date that works for you and let's discuss how I can help with your project.",
-      "date":"Select a date",
-      "button":"Book Now",
-      "emailsubject":"Booking Request",
-      "emailbody":"I would like to book your services",
-      "availability":"My Availability",
-      "consultation":"Design Consultation",
-      "consultdesc":"2-3 Days",
-      "dev":"Development Project",
-      "devdesc":"1-2 Weeks",
-      "techreview":"Technical Review",
-      "techreviewtime":"24 Hours",
-      "responsetime":"Response time: Usually within 24 hours"
+    "book": {
+      "title": "Ready to collaborate?",
+      "desc": "Choose a date that works for you and let's discuss how I can help with your project.",
+      "date": "Select a date",
+      "button": "Book Now",
+      "emailsubject": "Booking Request",
+      "emailbody": "I would like to book your services",
+      "availability": "My Availability",
+      "consultation": "Design Consultation",
+      "consultdesc": "2-3 Days",
+      "dev": "Development Project",
+      "devdesc": "1-2 Weeks",
+      "techreview": "Technical Review",
+      "techreviewtime": "24 Hours",
+      "responsetime": "Response time: Usually within 24 hours"
     }
   },
   "skills": {
     "title": "Skills",
+    "meta": {
+      "title": "Mohamed Amine Gharrab Skills",
+      "description": "Développeur web passionné spécialisé en UI/UX, React, et solutions modernes."
+    },
     "frontend": "Frontend",
     "backend": "Backend",
     "tools": "Tools",
@@ -94,6 +105,10 @@
   },
   "projects": {
     "title": "Projects",
+    "meta": {
+      "title": "Mohamed Amine Gharrab Projects",
+      "description": "Développeur web passionné spécialisé en UI/UX, React, et solutions modernes."
+    },
     "subtitle": "A selection of my recent work in fullstack web development",
     "technologies": "Technologies",
     "features": "Features",
@@ -101,7 +116,14 @@
       "1": {
         "title": "Bakery SaaS",
         "description": "A complete SaaS platform for bakeries, offering inventory management, online ordering, and sales analytics.",
-        "technologies": ["React", "Node.js", "Express", "MongoDB", "Stripe", "AWS"],
+        "technologies": [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "Stripe",
+          "AWS"
+        ],
         "features": [
           "Real-time inventory management",
           "Online ordering system",
@@ -120,7 +142,12 @@
       "2": {
         "title": "Bakery Website",
         "description": "An elegant showcase website for a bakery, highlighting products, services, and contact information.",
-        "technologies": ["React", "Next.js", "Tailwind CSS", "Prismic CMS"],
+        "technologies": [
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Prismic CMS"
+        ],
         "features": [
           "Responsive design",
           "Product catalog",
@@ -137,7 +164,12 @@
       "3": {
         "title": "Portfolio",
         "description": "A modern and customizable portfolio template for professionals who want to showcase their work and skills.",
-        "technologies": ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Framer Motion",
+          "Tailwind CSS"
+        ],
         "features": [
           "Customizable themes",
           "Modular sections",
@@ -154,7 +186,14 @@
       "4": {
         "title": "E-commerce",
         "description": "A complete e-commerce platform with product management, shopping cart, secure payments, and order tracking.",
-        "technologies": ["React", "Node.js", "MongoDB", "Stripe", "Redux", "Express"],
+        "technologies": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "Stripe",
+          "Redux",
+          "Express"
+        ],
         "features": [
           "Filterable product catalog",
           "Persistent shopping cart",
@@ -166,8 +205,12 @@
   },
   "certificates": {
     "title": "Certificates & Education",
+    "meta": {
+      "title": "Mohamed Amine Gharrab Certificates",
+      "description": "Développeur web passionné spécialisé en UI/UX, React, et solutions modernes."
+    },
     "subtitle": "My qualifications and certificates in web development",
-    "sub":"Certificates",
+    "sub": "Certificates",
     "education": {
       "title": "Education",
       "degree": "Engineering Degree in Computer Science",
@@ -182,9 +225,9 @@
       "bachelor": "Professional Bachelor's Degree in Mathematical Cryptography & Information Security",
       "bachelorYears": "2015 - 2018",
       "bachelorDesc": "Focused on mathematics, cryptography and computer science.",
-      "hnd":"HND in CyberSecurity & Cloud Computing",
-      "hndYears":"2022-2024",
-      "hndDesc":"Practical & theoretical skills in CyberSecurity, Cloud Infrastructure and Network Protection."
+      "hnd": "HND in CyberSecurity & Cloud Computing",
+      "hndYears": "2022-2024",
+      "hndDesc": "Practical & theoretical skills in CyberSecurity, Cloud Infrastructure and Network Protection."
     },
     "continuous": {
       "title": "Continuous Learning",
@@ -194,12 +237,16 @@
     }
   },
   "bonus": {
+    "meta": {
+      "title": "Mohamed Amine Gharrab Professional Bonus",
+      "description": "Développeur web passionné spécialisé en UI/UX, React, et solutions modernes."
+    },
     "sectionTitle": "Professional Bonus",
     "testimonials": "Testimonials",
     "blog": "Tech Blog",
     "availability": "Freelance Availability",
-    "read":"Read More",
-    "close":"Close",
+    "read": "Read More",
+    "close": "Close",
     "testimonialsData": [
       {
         "id": 1,
@@ -221,52 +268,56 @@
       }
     ],
     "blogPosts": [
-    {
-      "id": 1,
-      "title": "Optimizing React Performance in 2025",
-      "excerpt": "Discover the latest techniques to significantly improve the performance of your React applications...",
-      "content": "In this article, we'll explore advanced techniques to optimize the performance of your React applications in 2025. We'll cover intelligent caching, using React Server Components, render optimization with new APIs, and best practices for reducing bundle size.\n\nPerformance has become more crucial than ever in modern web application development, and React continues to evolve to meet these challenges. We'll see how to leverage the latest features of the React ecosystem to create smooth and responsive user experiences.",
-      "date": "2025-04-18",
-      "url": "#blog-post-1"
-    },
-    {
-      "id": 2,
-      "title": "Micro-frontends Architecture Explained",
-      "excerpt": "A detailed analysis of micro-frontends architecture and how to implement it effectively in your projects...",
-      "content": "Micro-frontends architecture has become a popular approach for managing large, complex frontend applications. In this article, we break down this concept in detail and explore how it can be implemented effectively.\n\nWe'll examine different integration strategies, performance and maintainability trade-offs, and concrete implementation examples with modern frameworks like React, Vue, and Angular. You'll also learn how to solve common challenges related to state sharing, navigation, and visual consistency.",
-      "date": "2025-03-22",
-      "url": "#blog-post-2"
-    },
-    {
-      "id": 3,
-      "title": "Advanced TypeScript for React Developers",
-      "excerpt": "Master advanced TypeScript concepts to make your React code more robust and maintainable...",
-      "content": "This article delves into advanced TypeScript features specifically useful for React developers. We'll cover generic types, conditional types, mapped types, and advanced type concepts.\n\nYou'll learn how to create strongly-typed components that are both flexible and safe, how to effectively use type inference, and how to avoid common pitfalls. We'll also explore libraries like zod and yup for schema validation, as well as strategies for managing global state with full type safety.",
-      "date": "2025-02-15",
-      "url": "#blog-post-3"
+      {
+        "id": 1,
+        "title": "Optimizing React Performance in 2025",
+        "excerpt": "Discover the latest techniques to significantly improve the performance of your React applications...",
+        "content": "In this article, we'll explore advanced techniques to optimize the performance of your React applications in 2025. We'll cover intelligent caching, using React Server Components, render optimization with new APIs, and best practices for reducing bundle size.\n\nPerformance has become more crucial than ever in modern web application development, and React continues to evolve to meet these challenges. We'll see how to leverage the latest features of the React ecosystem to create smooth and responsive user experiences.",
+        "date": "2025-04-18",
+        "url": "#blog-post-1"
+      },
+      {
+        "id": 2,
+        "title": "Micro-frontends Architecture Explained",
+        "excerpt": "A detailed analysis of micro-frontends architecture and how to implement it effectively in your projects...",
+        "content": "Micro-frontends architecture has become a popular approach for managing large, complex frontend applications. In this article, we break down this concept in detail and explore how it can be implemented effectively.\n\nWe'll examine different integration strategies, performance and maintainability trade-offs, and concrete implementation examples with modern frameworks like React, Vue, and Angular. You'll also learn how to solve common challenges related to state sharing, navigation, and visual consistency.",
+        "date": "2025-03-22",
+        "url": "#blog-post-2"
+      },
+      {
+        "id": 3,
+        "title": "Advanced TypeScript for React Developers",
+        "excerpt": "Master advanced TypeScript concepts to make your React code more robust and maintainable...",
+        "content": "This article delves into advanced TypeScript features specifically useful for React developers. We'll cover generic types, conditional types, mapped types, and advanced type concepts.\n\nYou'll learn how to create strongly-typed components that are both flexible and safe, how to effectively use type inference, and how to avoid common pitfalls. We'll also explore libraries like zod and yup for schema validation, as well as strategies for managing global state with full type safety.",
+        "date": "2025-02-15",
+        "url": "#blog-post-3"
+      }
+    ],
+    "freelance": {
+      "availableForWork": "✅ Available for freelance work",
+      "services": "Services offered",
+      "contactMe": "Contact me",
+      "downloadCV": "Download my Resume",
+      "downloadStarted": "Download started",
+      "downloadError": "Download error",
+      "servicesList": [
+        "React/Next.js Application Development",
+        "Backend Architecture with Node.js",
+        "E-commerce Website Development",
+        "WordPress Integration and Customization",
+        "SEO and Performance Optimization",
+        "ASP.NET [Desktop - Web] Applications",
+        "Database Design and Management",
+        "Performance and Scalability Optimization",
+        "Technical Consulting and Architecture Planning"
+      ]
     }
-  ],
-  "freelance": {
-    "availableForWork": "✅ Available for freelance work",
-    "services": "Services offered",
-    "contactMe": "Contact me",
-    "downloadCV": "Download my Resume",
-    "downloadStarted": "Download started",
-    "downloadError": "Download error",
-    "servicesList": [
-      "React/Next.js Application Development",
-      "Backend Architecture with Node.js",
-      "E-commerce Website Development",
-      "WordPress Integration and Customization",
-      "SEO and Performance Optimization",
-      "ASP.NET [Desktop - Web] Applications",
-      "Database Design and Management",
-      "Performance and Scalability Optimization",
-      "Technical Consulting and Architecture Planning"
-    ]
-  }
-},
+  },
   "contact": {
+    "meta": {
+      "title": "M.A.G Fullstack Developer",
+      "description": "Développeur web passionné spécialisé en UI/UX, React, et solutions modernes."
+    },
     "title": "Contact",
     "subtitle": "Have a project or question? Feel free to contact me!",
     "form": {
