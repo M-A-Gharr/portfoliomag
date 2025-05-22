@@ -10,24 +10,35 @@ import CertificatesSection from '@/components/CertificatesSection';
 import ContactSection from '@/components/ContactSection';
 import BonusProfessionnelsSection from '@/components/BonusProfessionelsSection';
 import Footer from '@/components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 
 const Index = () => {
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    // Update document title and meta description when language changes
-    document.title = t('hero.title') + ' | M.A.G';
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', t('hero.subtitle'));
-    }
-    // Set the document dir attribute based on language
-    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
-  }, [t, i18n.language]);
+  // useEffect(() => {
+  //   // Update document title and meta description when language changes
+  //   document.title = t('hero.title') + ' | M.A.G';
+  //   const metaDescription = document.querySelector('meta[name="description"]');
+  //   if (metaDescription) {
+  //     metaDescription.setAttribute('content', t('hero.subtitle'));
+  //   }
+  //   // Set the document dir attribute based on language
+  //   document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+  // }, [t, i18n.language]);
 
   return (
     <div className="relative min-h-screen bg-background text-foreground" dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}>
+      <Helmet>
+        <title>{t('hero.title')} | M.A.G</title>
+        <meta name="description" content={t('hero.subtitle')} />
+        <meta property="og:title" content={t('hero.title')} />
+        <meta property="og:description" content={t('hero.subtitle')} />
+        <meta property="og:image" content="/images/profile/magprofile.png" />
+        <meta property="og:type" content="website" />
+        <html lang={i18n.language} dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} />
+      </Helmet>
+
       <Header />
       <main>
         <HeroSection />

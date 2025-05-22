@@ -11,6 +11,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { Separator } from "@/components/ui/separator";
 import { format } from "date-fns";
 import { Element } from 'react-scroll';
+import { Helmet } from 'react-helmet-async';
 
 
 const AboutSection = () => {
@@ -47,6 +48,15 @@ const AboutSection = () => {
   };
 
   return (
+    <>
+    <Helmet>
+      <title>{t('about.meta.title')}</title>
+        <meta name="description" content={t('about.meta.description')} />
+        <meta property="og:title" content={t('about.meta.title')} />
+        <meta property="og:description" content={t('about.meta.description')} />
+        <meta property="og:image" content="/images/profile/magprofile.png" />
+        <meta property="og:type" content="website" />
+    </Helmet>
     <section id="about" className="section-container">
       <h2 className="section-title text-center">{t('about.title')}</h2>
       <div className="flex flex-col lg:flex-row gap-12 mt-10">
@@ -254,6 +264,7 @@ const AboutSection = () => {
           </Element>
         </div>
     </section>
+    </>
   );
 };
 
