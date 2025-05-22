@@ -104,6 +104,7 @@ const Header = () => {
                 <Link
                   key={link.name}
                   to={link.to}
+                  aria-label="Navigate to ${link.name}"
                   spy={true}
                   smooth={true}
                   offset={-70}

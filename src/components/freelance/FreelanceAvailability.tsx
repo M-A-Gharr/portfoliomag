@@ -90,7 +90,7 @@ const FreelanceAvailability = () => {
       </CardContent>
       <CardFooter className="flex flex-col sm:flex-row sm:justify-between gap-3 px-4 pb-4">
         <Button 
-          className="relative inline-flex items-center justify-center sm:flex-row w-4/6 py-3 bg-[#483dfb] hover:bg-[#483dfb]-dark text-white sm:w-auto"
+          className="relative inline-flex items-center justify-center sm:flex-row w-4/6 py-3 bg-[#261bfb] hover:bg-[#3e30fb] dark:hover:bg-[#3e30fb] text-white sm:w-auto"
           onClick={() => {
             const contactSection = document.getElementById('contact');
             if (contactSection) {

@@ -64,7 +64,7 @@ const HeroSection = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              className="relative cursor-pointer inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-[#483dfb] hover:bg-[#483dfb]-dark rounded-md group"
+              className="relative cursor-pointer inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-[#261bfb] hover:bg-[#3e30fb] dark:hover:bg-[#3e30fb] rounded-md group"
               aria-label="Scroll to About Section"
             >
               <span className="relative text-white">{t('hero.cta.discover')}</span>
@@ -76,7 +76,7 @@ const HeroSection = () => {
               smooth={true}
               offset={-70}
               duration={500}
-              className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-transparent border border-[#483dfb] text-[#483dfb] hover:text-white hover:bg-[#483dfb]-dark rounded-md group"
+              className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium transition-all bg-transparent border border-[#261bfb] text-[#261bfb] hover:text-white hover:bg-[#261bfb] dark:hover:bg-[#261bfb] rounded-md group"
             >
               <span className="relative">{t('hero.cta.projects')}</span>
             </Link>

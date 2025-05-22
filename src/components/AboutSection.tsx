@@ -54,8 +54,9 @@ const AboutSection = () => {
         <meta name="description" content={t('about.meta.description')} />
         <meta property="og:title" content={t('about.meta.title')} />
         <meta property="og:description" content={t('about.meta.description')} />
-        <meta property="og:image" content="/images/profile/magprofile.png" />
+        <meta property="og:image" content="https://maminegh.com/images/profile/magprofile.png" />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://maminegh.com/about" />
     </Helmet>
     <section id="about" className="section-container">
       <h2 className="section-title text-center">{t('about.title')}</h2>
@@ -226,7 +227,7 @@ const AboutSection = () => {
                   </Popover>
                   
                   <Button 
-                    className="bg-[#483dfb] hover:bg-[#483dfb]-dark text-white w-full sm:w-auto"
+                    className="bg-[#261bfb] hover:bg-[#3e30fb] dark:hover:bg-[#3e30fb] text-white w-full sm:w-auto"
                     onClick={handleBookNow}
                   >
                     {t('about.book.button')}
