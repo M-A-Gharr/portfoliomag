@@ -39,7 +39,7 @@ const AboutSection = () => {
     if (date) {
       // In a real implementation, this would send the booking request
       console.log(`Booking requested for: ${format(date, 'PPP')}`);
-      window.open('mailto:maminegharr@gmail.com?subject='+t('about.book.emailsubject')+'&body='+t('about.book.emailbody')+ 
+      window.open('mailto:contact.maminegh@gmail.com?subject='+t('about.book.emailsubject')+'&body='+t('about.book.emailbody')+ 
         (date ? ` on ${format(date, 'PPP')}` : ''), '_blank');
     } else {
       setShowCalendar(true);

@@ -35,7 +35,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">{t('footer.stayConnected', 'Stay Connected')}</h3>
             <div className="flex space-x-4">
               <a 
-                href="mailto:maminegharr@gmail.com" 
+                href="mailto:contact.maminegh@gmail.com" 
                 className="p-3 bg-secondary/50 hover:bg-[#483dfb]/80 text-foreground hover:text-white rounded-full transition-colors"
               >
                 <Mail size={20} />
